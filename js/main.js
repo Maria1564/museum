@@ -8,7 +8,6 @@ if (heroSlider) {
       el: '.hero-slider__pagination',
       clickable: true,
       renderBullet: function (index, className) {
-        console.log(className)
         return `<span class="${className}">${index + 1}</span>`;
       },
     },
