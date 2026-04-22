@@ -1,8 +1,12 @@
 :root {
     --color-gray: #D9D9D9;
+    --color-gray-2: #909090;
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-black-2: #0B0B0B;
     --color-gold: #CB9F78;
+    --color-gray: #E1E1E1;
+    --main-brown: #694B43;
 }
 
 *,
@@ -51,4 +55,19 @@ li {
     max-width: calc(1184px + 40px);
     padding: 0 20px;
     position: relative;
+}
+
+.btn-text {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.btn-text_black {
+    color: var(--color-black);
+}
+
+.btn-text_white {
+    color: var(--color-white);
 }
