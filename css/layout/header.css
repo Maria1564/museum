@@ -7,6 +7,15 @@
     padding-top: 20px;
 }
 
+.header__container {
+    max-width: calc(1440px + 20px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header__container-inner {
+    height: 100%;
+}
 
 .header-top {
     display: flex;
@@ -44,7 +53,7 @@
 .header-top__phone {
     display: flex;
     gap: 12px;
-    position: relative;    
+    position: relative;
 }
 
 .header-top__phone:after {
@@ -55,7 +64,7 @@
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--color-gray);  
+    background-color: var(--color-gray);
 }
 
 .header-top__phone-link {
@@ -63,4 +72,51 @@
     font-size: 18px;
     line-height: 100%;
     color: var(--color-white);
+}
+
+.header-bottom {
+    height: 80px;
+    border-top: 1px solid #E1E1E11A;
+    border-bottom: 1px solid #E1E1E11A;
+}
+
+.nav__list {
+    height: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.nav__item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav__item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+.nav__item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-gold);
+    transform: rotateY(90deg);
+    transition: all .5s;
+}
+
+.nav__item:hover::after,
+.nav__item.nav__item_active:after {
+    transform: rotateY(0deg);
 }
