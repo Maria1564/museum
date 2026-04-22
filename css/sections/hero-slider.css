@@ -142,6 +142,16 @@
     }
 }
 
+@media (max-width: 900px) {
+    .hero-slider__content {
+        margin-top: calc(42px + 70px);
+    }
+
+    .swiper-slide {
+        height: 572px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .hero-slider__title {
@@ -150,7 +160,7 @@
     }
 
     .hero-slider__description {
-        font-size: 14px ;
+        font-size: 14px;
     }
 
     .hero-slider__footer {
@@ -158,11 +168,11 @@
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .hero-slider__footer {
         align-items: stretch;
     }
-    
+
     .hero-slider__navigation {
         bottom: -40px;
         left: 50%;

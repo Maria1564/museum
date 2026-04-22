@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.header-top__accessible,
+.header-top__accessibility,
 .header-top__tickets-info {
     font-weight: 400;
     font-size: 11px;
@@ -74,6 +74,37 @@
     color: var(--color-white);
 }
 
+.header-top__menu {
+    display: none;
+    position: relative;
+    width: 21px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.header-top__menu:after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    top: 5px;
+    left: 0;
+}
+
+.header-top__menu::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    top: -5px;
+    left: 0;
+}
+
 .header-bottom {
     height: 80px;
     border-top: 1px solid #E1E1E11A;
@@ -93,6 +124,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 
 }
 
@@ -119,4 +151,50 @@
 .nav__item:hover::after,
 .nav__item.nav__item_active:after {
     transform: rotateY(0deg);
+}
+
+@media (max-width: 1120px) {
+    .nav__list {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-top__info {
+        gap: 30px;
+    }
+
+    .header-top__logo {
+        width: 197px;
+    }
+
+    .header-top__accessibility-link,
+    .header-top__phone-link {
+        display: none;
+    }
+
+    .nav__item-link {
+        font-size: 12px;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .header__bottom {
+        display: none;
+    }
+
+    .header-top__menu {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-top__accessibility,
+    .header-top__tickets-info,
+    .header-top__phone:after {
+        display: none;
+    }
 }
