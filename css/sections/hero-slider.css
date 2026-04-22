@@ -112,6 +112,7 @@
 .hero-slider__button-prev,
 .hero-slider__button-next {
     cursor: pointer;
+    color: var(--color-white);
 }
 
 .hero-slider .swiper-pagination-bullet {
@@ -160,5 +161,24 @@
 @media (max-width: 576px){
     .hero-slider__footer {
         align-items: stretch;
-    }  
+    }
+    
+    .hero-slider__navigation {
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero-slider .swiper-pagination-bullet {
+        color: #0000004D;
+    }
+
+    .hero-slider .swiper-pagination-bullet-active {
+        color: var(--color-black);
+    }
+
+    .hero-slider__button-prev,
+    .hero-slider__button-next {
+        color: var(--color-black);
+    }
 }

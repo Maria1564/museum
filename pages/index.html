@@ -15,9 +15,15 @@
 
 <body>
     <!-- header -->
-    <header class="header">dsfdfdsf</header>
+    <header class="header">
+        <div class="header__top header-top">
+            <img src="/images/logo-header.png" alt="logo" class="header-top__logo">
+        </div>
+    </header>
 
     <main class="main">
+
+        <!-- heroSlider -->
         <section class="hero-slider">
             <div class="swiper hero-slider__swiper">
                 <div class="swiper-wrapper">
@@ -96,20 +102,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="hero-slider__navigation">
-                        <button class="hero-slider__button-prev" type="button" aria-label="Предыдущий слайд">
-                            <img src="/images/arrow-left.svg" alt="arrow left">
-                        </button>
-                        <div class="hero-slider__pagination"></div>
-                        <button class="hero-slider__button-next" type="button" aria-label="Следующий слайд">
-                            <img src="/images/arrow-right.svg" alt="arrow right">
-                        </button>
-                    </div>
-                </div>
+            </div>
+            <div class="container">
+                <div class="hero-slider__navigation">
+                    <button class="hero-slider__button-prev" type="button" aria-label="Предыдущий слайд">
+                        <svg width="39" height="15" viewBox="0 0 39 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_11_13586)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.94316 15L7.57026 14.2929L2.32956 8.38325L38.5049 8.38325L38.5049 7.38325L2.26076 7.38325L7.57026 1.396L6.94316 0.688901L0.597665 7.84445L6.94316 15Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_11_13586">
+                                    <rect width="39" height="15" fill="white"
+                                        transform="translate(39 15) rotate(-180)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
+                    </button>
+                    <div class="hero-slider__pagination"></div>
+                    <button class="hero-slider__button-next" type="button" aria-label="Следующий слайд">
+                        <svg width="39" height="15" viewBox="0 0 39 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_11_13594)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M32.0568 0L31.4297 0.707107L36.6704 6.61675H0.495117V7.61675H36.7392L31.4297 13.604L32.0568 14.3111L38.4023 7.15555L32.0568 0Z"
+                                    fill="currentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_11_13594">
+                                    <rect width="39" height="15" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </button>
+                </div>
             </div>
         </section>
+
+
+
+
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
