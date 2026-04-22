@@ -4,4 +4,63 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    padding-top: 20px;
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-top__info {
+    display: flex;
+    gap: 81px;
+    align-items: center;
+}
+
+.header-top__accessibility {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header-top__accessible,
+.header-top__tickets-info {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF99;
+}
+
+.header-top__meta {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-top__phone {
+    display: flex;
+    gap: 12px;
+    position: relative;    
+}
+
+.header-top__phone:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: calc(-32px/2);
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-gray);  
+}
+
+.header-top__phone-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--color-white);
 }
