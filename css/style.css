@@ -1,13 +1,14 @@
 @import url('./base/global.css');
 
 @import url('./layout/header.css');
+@import url('./layout/footer.css');
 @import url('./layout/events-grid.css');
+
+@import url('./components/event-card.css');
+@import url('./components/social-card.css');
 
 @import url('./sections/hero-slider.css');
 @import url('./sections/events-preview.css');
 @import url('./sections/social-news.css');
 @import url('./sections/about.css');
-
-@import url('./components/event-card.css');
-@import url('./components/social-card.css');
-
+@import url('./sections/other.css');
