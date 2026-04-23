@@ -7,6 +7,8 @@
     --color-gold: #CB9F78;
     --color-gray: #E1E1E1;
     --main-brown: #694B43;
+    --color-beige: #F7F5F3;
+    --color-beige-2: #F9F9F9;
 }
 
 *,
@@ -29,11 +31,6 @@ img {
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 100%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 button {
@@ -70,4 +67,9 @@ li {
 
 .btn-text_white {
     color: var(--color-white);
+}
+
+.title {
+    font-size: 44px;
+    color: var(--color-black);
 }

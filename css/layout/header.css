@@ -133,6 +133,7 @@
     font-size: 14px;
     line-height: 100%;
     color: var(--color-white);
+    text-transform: uppercase;
 }
 
 .nav__item:after {

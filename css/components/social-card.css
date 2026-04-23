@@ -1,0 +1,19 @@
+.social-card {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-beige-2);
+    border-radius: 26px;
+}
+
+.social-card__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 140%;
+    color: var(--color-black);
+}

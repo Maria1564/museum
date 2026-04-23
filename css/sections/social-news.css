@@ -1,0 +1,128 @@
+.social-news {
+    background-color: var(--color-beige);
+    overflow: hidden;
+    padding: 79px 0 90px;
+}
+
+.social-news__container {
+    padding: 0 120px;
+    margin: 0 auto;
+    max-width: calc(990px + 240px);
+}
+
+.social-news__wrapper {
+    position: relative;
+    max-width: 990px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.social-news__right {
+    width: 381px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.social-news__right>img {
+    width: 100%;
+}
+
+.social-news__content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.social-news__title {
+    max-width: 574px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.social-news__line {
+    width: 300px;
+    height: 2px;
+    background-color: #dfdddb;
+}
+
+.social-news__description {
+    max-width: 543px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--color-black);
+}
+
+.social-news__list {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 6px;
+    margin-top: 45px;
+}
+
+@media (max-width: 1230px) {
+    .social-news__container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .social-news__right {
+        display: none;
+    }
+
+    .social-news__wrapper {
+        justify-content: center;
+    }
+
+    .social-news__content {
+        align-items: center;
+    }
+
+    .social-news__title,
+    .social-news__description {
+        text-align: center;
+    }
+
+    .social-news__list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-news__content {
+        gap: 20px;
+    }
+
+    .social-news__title {
+        font-size: 32px;
+    }
+
+    .social-news__description {
+        font-size: 15px;
+    }
+
+    .social-news {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-news__title {
+        font-size: 28px;
+    }
+
+    .social-news__description {
+        font-size: 14px;
+    }
+
+    .social-news__list {
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+    }
+
+    .social-news__line {
+        max-width: 210px    ;
+    }
+}

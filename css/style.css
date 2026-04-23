@@ -5,6 +5,8 @@
 
 @import url('./sections/hero-slider.css');
 @import url('./sections/events-preview.css');
+@import url('./sections/social-news.css');
 
 @import url('./components/event-card.css');
+@import url('./components/social-card.css');
 
