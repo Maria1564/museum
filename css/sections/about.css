@@ -53,3 +53,39 @@
     line-height: 160%;
     color: var(--color-gray-2);
 }
+
+@media (max-width: 1175px) {
+    .about__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about__description {
+        font-size: 15px;
+    }
+
+    .about__header {
+        flex-direction: column;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    .about__stats {
+        gap: 10px;
+    }
+
+    .about__stat {
+        padding: 17px 12px;
+    }
+
+    .about__stat-value {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 40px 0;
+    }
+}

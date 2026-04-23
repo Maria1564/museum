@@ -97,11 +97,7 @@
 
     .social-news__description {
         font-size: 15px;
-    }
-
-    .social-news {
-        padding: 30px 0;
-    }
+    } 
 }
 
 @media (max-width: 576px) {
@@ -116,5 +112,9 @@
 
     .social-news__line {
         max-width: 210px    ;
+    }
+
+    .social-news {
+        padding: 30px 0;
     }
 }
