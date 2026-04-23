@@ -73,3 +73,17 @@ li {
     font-size: 44px;
     color: var(--color-black);
 }
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 28px;
+    }
+}
