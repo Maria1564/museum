@@ -15,92 +15,12 @@
 
 <body>
 
-    <div class="mobile-menu">
-        <div class="mobile-menu__wrapper">
-            <div class="mobile-menu__header">
-                <img src="/images/logo.svg" alt="логотип" class="mobile-menu__logo">
-                <img src="/images/close.svg" alt="крестик" class="mobile-menu__close-icon">
-            </div>
+    <?php include dirname(__DIR__) . '/template-parts/mobile-menu.php'; ?>
 
-            <div class="mobile-menu__content">
-                <nav class="mobile-menu__list">
-                    <li><a href="#" class="mobile-menu__item">О музее</a></li>
-                    <li><a href="#" class="mobile-menu__item">Посетителям</a></li>
-                    <li><a href="#" class="mobile-menu__item">Музей Завершье</a></li>
-                    <li><a href="#" class="mobile-menu__item">Мероприятия</a></li>
-                    <li><a href="#" class="mobile-menu__item">Филиалы</a></li>
-                    <li><a href="#" class="mobile-menu__item">Библиотека</a></li>
-                    <li><a href="#" class="mobile-menu__item">Контакты</a></li>
-                </nav>
-
-                <div class="mobile-menu__meta">
-                    <a class="mobile-menu__phone">
-                        <img src="/images/phone.svg" alt="телефон">
-                        <span class="mobile-menu__phone-text">+7 (4842) 72-16-18</span>
-                    </a>
-                    <a class="mobile-menu__accessibility">
-                        <img src="/images/eye.svg" alt="глаз">
-                        <span class="mobile-menu__accessibility-text">Версия для слабовидящих</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- header -->
-    <header class="header">
-
-        <div class="container">
-            <div class="header__top header-top">
-                <div class="header-top__menu">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 19.833H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.5 14H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.5 8.16699H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <img src="/images/logo.svg" alt="логотип" class="header-top__logo">
-                <div class="header-top__info">
-
-                    <a class="header-top__accessibility" href="#">
-                        <img src="/images/eye.svg" alt="глаз">
-                        <p class="header-top__accessibility-link">Версия для <br> слабовидящих</p>
-                    </a>
-
-                    <div class="header-top__meta">
-
-                        <a href="tel:+7 (4842) 72-16-18" class="header-top__phone">
-                            <img src="/images/phone.svg" alt="телефон">
-                            <p class="header-top__phone-link">+7 (4842) 72-16-18</p>
-
-                        </a>
-
-
-                        <a href="#" class="header-top__tickets-info">Справка о наличии <br> и стоимости билетов</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="header__bottom header-bottom">
-            <div class="container header__container-inner">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__item-link">О музее</a></li>
-                    <li class="nav__item nav__item_active"><a href="#" class="nav__item-link">Посетителям</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Музей Завершье</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Мероприятия</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Филиалы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Документы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Библиотека</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </header>
+    <?php
+    require_once dirname(__DIR__) . '/template-parts/header.php';
+    renderHeader('light');
+    ?>
 
     <main class="main">
 
@@ -109,7 +29,7 @@
             <div class="swiper hero-slider__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="/images/slide-1.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/slide-1.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -134,7 +54,7 @@
                     </div>
 
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="/images/slide-2.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/slide-2.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -159,7 +79,7 @@
                     </div>
 
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="/images/slide-1.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/slide-1.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -229,7 +149,7 @@
                 <div class="events-preview__header">
                     <h2 class="events-preview__title">Афиша мероприятий</h2>
                     <a href="#" class="events-preview__btn">
-                        <img src="/images/calendar.svg" alt="календарь">
+                            <img src="../images/calendar.svg" alt="календарь">
                         <p class="btn-text btn-text_black">полная афиша</p>
                     </a>
                 </div>
@@ -241,24 +161,24 @@
                     <!-- event-card  -->
                     <div class="event-card">
                         <div class="event-card__img">
-                            <img src="/images/event-1.png" alt="мероприятие">
+                                <img src="../images/event-1.png" alt="мероприятие">
                             <div class="event-card__schedule">
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
+                                        <img src="../images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">31 Марта - 14 Апреля</span>
                                 </div>
 
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/clock.svg" alt="время" class="event-card__schedule-icon">
+                                        <img src="../images/clock.svg" alt="время" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">10:00 - 18:00</span>
                                 </div>
                             </div>
 
-                            <div class="event-card__program"><img src="/images/pushkin.png" alt="пушкинская карта">
+                                    <div class="event-card__program"><img src="../images/pushkin.png" alt="пушкинская карта">
                             </div>
 
                             <div class="event-card__audience">
-                                <img src="/images/smile.svg" alt="смайлик">
+                                        <img src="../images/smile.svg" alt="смайлик">
                                 <span class="event-card__audience-text">Для детей</span>
                             </div>
                         </div>
@@ -277,12 +197,12 @@
 
                             <div class="event-card__details">
                                 <div class="event-card__detail">
-                                    <img src="/images/map-pin.svg" alt="карта" class="event-card__detail-icon">
+                                        <img src="../images/map-pin.svg" alt="карта" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Музейно-краеведческий комплекс «Усадьба
                                         Золотарёвых»</p>
                                 </div>
                                 <div class="event-card__detail">
-                                    <img src="/images/ticket.svg" alt="билет" class="event-card__detail-icon">
+                                        <img src="../images/ticket.svg" alt="билет" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Стоимость: от 0 ₽  до 200 ₽</p>
                                 </div>
                             </div>
@@ -293,21 +213,21 @@
 
                     <div class="event-card">
                         <div class="event-card__img">
-                            <img src="/images/event-2.png" alt="мероприятие">
+                                <img src="../images/event-2.png" alt="мероприятие">
                             <div class="event-card__schedule">
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
+                                        <img src="../images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">31 Марта</span>
                                 </div>
 
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/clock.svg" alt="время" class="event-card__schedule-icon">
+                                        <img src="../images/clock.svg" alt="время" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">10:00 - 18:00</span>
                                 </div>
                             </div>
 
                             <div class="event-card__audience">
-                                <img src="/images/smile.svg" alt="смайлик">
+                                        <img src="../images/smile.svg" alt="смайлик">
                                 <span class="event-card__audience-text">Для детей</span>
                             </div>
                         </div>
@@ -326,12 +246,12 @@
 
                             <div class="event-card__details">
                                 <div class="event-card__detail">
-                                    <img src="/images/map-pin.svg" alt="карта" class="event-card__detail-icon">
+                                        <img src="../images/map-pin.svg" alt="карта" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Музейно-краеведческий комплекс «Усадьба
                                         Золотарёвых»</p>
                                 </div>
                                 <div class="event-card__detail">
-                                    <img src="/images/ticket.svg" alt="билет" class="event-card__detail-icon">
+                                        <img src="../images/ticket.svg" alt="билет" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Стоимость: от 0 ₽  до 200 ₽</p>
                                 </div>
                             </div>
@@ -342,21 +262,21 @@
 
                     <div class="event-card">
                         <div class="event-card__img">
-                            <img src="/images/event-3.png" alt="мероприятие">
+                                <img src="../images/event-3.png" alt="мероприятие">
                             <div class="event-card__schedule">
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
+                                        <img src="../images/calendar.svg" alt="календарь" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">31 Марта - 14 Апреля</span>
                                 </div>
 
                                 <div class="event-card__schedule-item">
-                                    <img src="/images/clock.svg" alt="время" class="event-card__schedule-icon">
+                                        <img src="../images/clock.svg" alt="время" class="event-card__schedule-icon">
                                     <span class="event-card__schedule-text">10:00 - 18:00</span>
                                 </div>
                             </div>
 
 
-                            <div class="event-card__program"><img src="/images/pushkin.png" alt="пушкинская карта">
+                                    <div class="event-card__program"><img src="../images/pushkin.png" alt="пушкинская карта">
                             </div>
                         </div>
 
@@ -374,12 +294,12 @@
 
                             <div class="event-card__details">
                                 <div class="event-card__detail">
-                                    <img src="/images/map-pin.svg" alt="карта" class="event-card__detail-icon">
+                                        <img src="../images/map-pin.svg" alt="карта" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Музейно-краеведческий комплекс «Усадьба
                                         Золотарёвых»</p>
                                 </div>
                                 <div class="event-card__detail">
-                                    <img src="/images/ticket.svg" alt="билет" class="event-card__detail-icon">
+                                        <img src="../images/ticket.svg" alt="билет" class="event-card__detail-icon">
                                     <p class="event-card__detail-text">Стоимость: от 0 ₽  до 200 ₽</p>
                                 </div>
                             </div>
@@ -409,25 +329,25 @@
 
                             <!-- social-card  -->
                             <a href="#" class="social-card">
-                                <img src="/images/tg.svg" alt="">
+                                <img src="../images/tg.svg" alt="">
                                 <span class="social-card__text">Telegram</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="/images/max.svg" alt="">
+                                <img src="../images/max.svg" alt="">
                                 <span class="social-card__text">Max</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="/images/vk.svg" alt="">
+                                <img src="../images/vk.svg" alt="">
                                 <span class="social-card__text">Вконтакте</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="/images/ok.svg" alt="">
+                                <img src="../images/ok.svg" alt="">
                                 <span class="social-card__text">Одноклассники</span>
                             </a>
                         </div>
                     </div>
                     <div class="social-news__right">
-                        <img src="/images/mobile.png" alt="">
+                            <img src="../images/mobile.png" alt="">
                     </div>
                 </div>
             </div>
@@ -472,14 +392,14 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide other__slide">
                             <a class="other__link" href="#" target="_blank">
-                                <img class="other__image" src="/images/banner.png"
+                        <img class="other__image" src="../images/banner.png"
                                     alt="Льготный кредит на восстановление">
                             </a>
                         </div>
 
                         <div class="swiper-slide other__slide">
                             <a class="other__link" href="#" target="_blank">
-                                <img class="other__image" src="/images/banner.png"
+                        <img class="other__image" src="../images/banner.png"
                                     alt="Льготный кредит на восстановление">
                             </a>
                         </div>
@@ -488,87 +408,17 @@
                 </div>
                 <div class="other__navigation">
                     <button class="other__button-prev" type="button" aria-label="Предыдущий слайд">
-                        <img src="/images/arrow-left-2.svg" alt="">
+                            <img src="../images/arrow-left-2.svg" alt="">
                     </button>
                     <button class="other__button-next" type="button" aria-label="Следующий слайд">
-                        <img src="/images/arrow-right-2.svg" alt="">
+                            <img src="../images/arrow-right-2.svg" alt="">
                     </button>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- footer  -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-top__wrapper">
-                    <div class="footer-top__logo">
-                        <img src="/images/logo.svg" alt="логотип">
-                    </div>
-                    <div class="footer-top__content">
-                        <div class="footer-top__contacts">
-                            <div class="footer-top__phone">
-                                <span class="footer-top__label">Телефон:</span>
-                                <a class="footer-top__contact-link footer-top__value" href="tel:+74842721618">+7 (4842)
-                                    72-16-18</a>
-                            </div>
-
-                            <div class="footer-top__schedule">
-                                <span class="footer-top__label">Время работы:</span>
-                                <ul class="footer-top__schedule-list">
-                                    <li class="footer-top__schedule-item footer-top__value">вт-пт 09:30–18:00;</li>
-                                    <li class="footer-top__schedule-item footer-top__value">сб 11:00–19:00;</li>
-                                    <li class="footer-top__schedule-item footer-top__value">вс 09:30–18:00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <nav class="footer-top__nav">
-                            <span class="footer-top__label footer-top__nav-label">Посетителям</span>
-                            <ul class="footer-top__nav-list">
-                                <li class="footer-top__nav-item">Электронная запись на экскурсии</li>
-                                <li class="footer-top__nav-item">Пушкинская карта</li>
-                                <li class="footer-top__nav-item">Правила посещения</li>
-                                <li class="footer-top__nav-item">Льготное посещение и программа #СВОяКУЛЬТУРА</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="footer-top__socials">
-                    <span class="footer-top__label">Мы в социальных сетях:</span>
-                    <div class="footer-top__socials-list">
-                        <a href="" class="footer-top__social">
-                            <img src="/images/tg-white.svg" alt="телеграмм">
-                        </a>
-                        <a href="" class="footer-top__social">
-                            <img src="/images/max-white.svg" alt="MAX">
-                        </a>
-                        <a href="" class="footer-top__social">
-                            <img src="/images/vk-white.svg" alt="вк">
-                        </a>
-                        <a href="" class="footer-top__social">
-                            <img src="/images/ok-white.svg" alt="одноклассники">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom__content">
-                    <ul class="footer-bottom__legal">
-                        <li><a href="#" class="footer-bottom__text">Согласие с использованием cookie</a></li>
-                        <li><a href="#" class="footer-bottom__text">Соглашение об обработке персональных данных</a></li>
-                        <li><a href="#" class="footer-bottom__text">Политика конфиденциальности</a></li>
-                    </ul>
-                    <p class="footer-bottom__text">Калужский объединённый музей-заповедник. <br>Все права защищены ©
-                        2021
-                    </p>
-                </div>
-                <p class="footer-bottom__text">Дизайн сайта — Pacmans <br> Разработка сайта — The Red Button</p>
-            </div>
-        </div>
-    </footer>
+    <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>

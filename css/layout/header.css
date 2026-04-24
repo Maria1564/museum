@@ -125,6 +125,11 @@
     transform: rotateY(0deg);
 }
 
+
+/* dark  */
+
+
+
 @media (max-width: 1120px) {
     .nav__list {
         gap: 30px;
