@@ -79,7 +79,7 @@
     position: relative;
     width: 21px;
     height: 2px;
-    border-radius: 50%;
+    border-radius: 2px;
     background-color: var(--color-white);
 }
 
@@ -88,7 +88,7 @@
     position: absolute;
     width: 21px;
     height: 2px;
-    border-radius: 50%;
+    border-radius: 2px;
     background-color: var(--color-white);
     top: 5px;
     left: 0;
@@ -99,7 +99,7 @@
     position: absolute;
     width: 21px;
     height: 2px;
-    border-radius: 50%;
+    border-radius: 2px;
     background-color: var(--color-white);
     top: -5px;
     left: 0;
@@ -124,7 +124,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
 
 }
 
@@ -133,7 +132,6 @@
     font-size: 14px;
     line-height: 100%;
     color: var(--color-white);
-    text-transform: uppercase;
 }
 
 .nav__item:after {

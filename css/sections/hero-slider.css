@@ -92,6 +92,10 @@
     background: #0000001A;
     backdrop-filter: blur(20px);
     text-align: center;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 100%;
+    text-transform: uppercase;
 }
 
 .hero-slider__navigation {
@@ -190,5 +194,9 @@
     .hero-slider__button-prev,
     .hero-slider__button-next {
         color: var(--color-black);
+    }
+
+    .hero-slider__pagination {
+        gap: 10px;
     }
 }
