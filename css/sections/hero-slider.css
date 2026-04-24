@@ -96,6 +96,12 @@
     font-size: 11px;
     line-height: 100%;
     text-transform: uppercase;
+    transition: all .5s;
+}
+
+.hero-slider__button:hover {
+    background-color: var(--main-brown);
+    border-color: transparent;
 }
 
 .hero-slider__navigation {
