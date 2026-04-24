@@ -1,0 +1,32 @@
+.breadcrumbs__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.breadcrumbs__item {
+    position: relative;
+}
+
+.breadcrumbs__item + .breadcrumbs__item::before {
+      position: absolute;
+    content: "";
+    width: 1px;
+    height: 50%;
+    top: 50%;
+    left: calc(-22px / 2);
+    transform: translateY(-50%);
+    background-color: var(--color-gray-7);
+    display: block;
+}
+
+.breadcrumbs__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    color: var(--color-black);
+}
+
+.breadcrumbs__current {
+    color: var(--color-gray-7);
+}

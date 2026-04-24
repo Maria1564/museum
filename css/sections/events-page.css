@@ -1,0 +1,16 @@
+.events-page {
+    margin-top: calc(36px + 180px);
+    margin-bottom: 115px;
+}
+
+.events-page__header {
+    margin-bottom: 40px;
+}
+
+.events-page__title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--color-black);
+}

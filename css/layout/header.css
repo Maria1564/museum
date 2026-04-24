@@ -127,8 +127,30 @@
 
 
 /* dark  */
+.header_dark .header-top__accessibility-link {
+    color: #00000099;
+}
 
+.header_dark .header-top__phone-link {
+    color: var(--color-black)
+}
 
+.header_dark .header-top__tickets-info {
+    color: #00000099;
+}
+
+.header_dark .header-bottom {
+    border-top: 1px solid var(--color-gray-6);
+    border-bottom: 1px solid var(--color-gray-6);
+}
+
+.header_dark .nav__item-link {
+    color: var(--color-black);
+}
+
+.header_dark .nav__item_active .nav__item-link{
+    color: var(--color-gold);
+}
 
 @media (max-width: 1120px) {
     .nav__list {

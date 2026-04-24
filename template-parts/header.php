@@ -1,5 +1,5 @@
 <?php
-function renderHeader(string $theme = 'light'): void
+function renderHeader(string $theme = 'light', string $activePage = ''): void
 {
     ?>
     <!-- header -->
@@ -8,16 +8,16 @@ function renderHeader(string $theme = 'light'): void
         <div class="container">
             <div class="header__top header-top">
                 <div class="header-top__menu">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 19.833H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.5 14H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M3.5 8.16699H24.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 19.833H24.5" stroke="<?= $theme === 'light' ? 'white' : '#000000' ?>" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        <path d="M3.5 14H24.5" stroke="<?= $theme === 'light' ? 'white' : '#000000' ?>" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        <path d="M3.5 8.16699H24.5" stroke="<?= $theme === 'light' ? 'white' : '#000000' ?>" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </svg>
                 </div>
-                <img src="../images/logo.svg" alt="логотип" class="header-top__logo">
+                <img src="<?= $theme === 'dark' ? '../images/logo-dark.svg' : '../images/logo.svg' ?>" alt="логотип" class="header-top__logo">
                 <div class="header-top__info">
 
                     <a class="header-top__accessibility" href="#">
@@ -43,14 +43,14 @@ function renderHeader(string $theme = 'light'): void
         <div class="header__bottom header-bottom">
             <div class="container header__container-inner">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__item-link">О музее</a></li>
-                    <li class="nav__item nav__item_active"><a href="#" class="nav__item-link">Посетителям</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Музей Завершье</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Мероприятия</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Филиалы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Документы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Библиотека</a></li>
-                    <li class="nav__item"><a href="#" class="nav__item-link">Контакты</a></li>
+                    <li class="nav__item <?= $activePage === 'about' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">О музее</a></li>
+                    <li class="nav__item <?= $activePage === 'visitors' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Посетителям</a></li>
+                    <li class="nav__item <?= $activePage === 'zavershye' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Музей Завершье</a></li>
+                    <li class="nav__item <?= $activePage === 'events' ? 'nav__item_active' : '' ?>"><a href="../pages/events.php" class="nav__item-link">Мероприятия</a></li>
+                    <li class="nav__item <?= $activePage === 'branches' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Филиалы</a></li>
+                    <li class="nav__item <?= $activePage === 'documents' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Документы</a></li>
+                    <li class="nav__item <?= $activePage === 'library' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Библиотека</a></li>
+                    <li class="nav__item <?= $activePage === 'contacts' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Контакты</a></li>
                 </ul>
             </div>
         </div>
