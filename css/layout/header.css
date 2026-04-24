@@ -76,33 +76,6 @@
 
 .header-top__menu {
     display: none;
-    position: relative;
-    width: 21px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--color-white);
-}
-
-.header-top__menu:after {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--color-white);
-    top: 5px;
-    left: 0;
-}
-
-.header-top__menu::before {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--color-white);
-    top: -5px;
-    left: 0;
 }
 
 .header-bottom {
