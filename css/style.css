@@ -3,6 +3,7 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 @import url('./layout/events-grid.css');
+@import url('./layout/mobile-menu.css');
 
 @import url('./components/event-card.css');
 @import url('./components/social-card.css');

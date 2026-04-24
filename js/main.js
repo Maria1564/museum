@@ -30,3 +30,28 @@ if (otherSlider) {
     },
   });
 }
+
+
+const btnOpenMenu = document.querySelector(".header-top__menu")
+const mobileMenu = document.querySelector(".mobile-menu")
+const mobileMenuWrapper = document.querySelector(".mobile-menu__wrapper")
+const html = document.querySelector("html")
+const btnCloseMobileMenu = document.querySelector(".mobile-menu__close-icon")
+
+btnOpenMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("mobile-menu_open")
+  html.style.overflow = "hidden"
+})
+
+const closeMobileMenu = () => {
+  mobileMenu.classList.remove("mobile-menu_open")
+  html.style.overflow = ""
+}
+
+btnCloseMobileMenu.addEventListener("click", closeMobileMenu)
+
+mobileMenu.addEventListener("click", (event) => {
+  if (!mobileMenuWrapper.contains(event.target)) {
+    closeMobileMenu()
+  }
+})
