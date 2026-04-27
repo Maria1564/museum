@@ -33,25 +33,34 @@ if (otherSlider) {
 
 
 const btnOpenMenu = document.querySelector(".header-top__menu")
-const mobileMenu = document.querySelector(".mobile-menu")
-const mobileMenuWrapper = document.querySelector(".mobile-menu__wrapper")
-const html = document.querySelector("html")
-const btnCloseMobileMenu = document.querySelector(".mobile-menu__close-icon")
+const mobileMenu = document.querySelector(".mobile-menu.drawer")
+const mobileMenuWrapper = mobileMenu?.querySelector(".drawer__wrapper")
+const btnCloseMobileMenu = mobileMenu?.querySelector(".drawer__close-icon")
+const html = document.documentElement
 
-btnOpenMenu.addEventListener("click", () => {
-  mobileMenu.classList.add("mobile-menu_open")
+const openDrawer = (drawer) => {
+  drawer.classList.add("drawer_open")
   html.style.overflow = "hidden"
-})
+}
 
-const closeMobileMenu = () => {
-  mobileMenu.classList.remove("mobile-menu_open")
+const closeDrawer = (drawer) => {
+  drawer.classList.remove("drawer_open")
   html.style.overflow = ""
 }
 
-btnCloseMobileMenu.addEventListener("click", closeMobileMenu)
+if (btnOpenMenu && mobileMenu && mobileMenuWrapper) {
 
-mobileMenu.addEventListener("click", (event) => {
-  if (!mobileMenuWrapper.contains(event.target)) {
-    closeMobileMenu()
-  }
-})
+  btnOpenMenu.addEventListener("click", () => {
+    openDrawer(mobileMenu)
+  })
+
+  btnCloseMobileMenu?.addEventListener("click", () => {
+    closeDrawer(mobileMenu)
+  })
+
+  mobileMenu.addEventListener("click", (event) => {
+    if (!mobileMenuWrapper.contains(event.target)) {
+      closeDrawer(mobileMenu)
+    }
+  })
+}

@@ -39,6 +39,51 @@
     gap: 6px;
 }
 
+.events-filters__wrapper {
+    background-color: var(--color-white);
+}
+
+.events-filters__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.events-filters__title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 100%;
+    color: var(--color-black);
+    flex-grow: 1;
+}
+
+.events-filters__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.events-filters__btn {
+    width: 100%;
+}
+
+.events-filters__filter-selects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.events-filters__select {
+    max-width: 100%;
+}
+
+.events-filters__options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media (max-width: 1024px) {
     .events-page__filters {
         flex-direction: column;
@@ -81,63 +126,6 @@
 }
 
 
-/* select  */
-.select {
-    position: relative;
-    max-width: 216px;
-}
-
-.select__button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    padding: 13px 14px 13px 18px;
-    border: 2px solid var(--color-gray-6);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.select__text {
-    min-width: 0;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 100%;
-    color: var(--color-black-5);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.select__dropdown {
-    display: none;
-    position: absolute;
-    z-index: 100;
-    background-color: white;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-}
-
-.select_open .select__dropdown {
-    display: flex;
-}
-
-.select__icon_cross {
-    display: none;
-}
-
-.select_selected .select__icon_arrow {
-    display: none;
-}
-
-.select_selected .select__icon_cross {
-    display: block;
-}
-
-.select.select_selected .select__button {
-    border-color: #D6CDC4;
-}
 
 /* filter-button  */
 
@@ -153,6 +141,7 @@
     font-size: 11px;
     line-height: 100%;
     text-transform: uppercase;
+    color: var(--color-black);
 }
 
 .filter-button__reset {

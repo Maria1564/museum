@@ -29,3 +29,29 @@ filterSelects.forEach(select => {
         }
     });
 });
+
+
+
+// открытие/закрытие плашки фильтров
+
+const filtersOpenButton = document.querySelector(".events-page__btn-toggle")
+const filtersDrawer = document.querySelector(".events-filters.drawer")
+const filtersWrapper  = filtersDrawer?.querySelector(".drawer__wrapper")
+const filtersCloseButton  = filtersDrawer?.querySelector(".drawer__close-icon")
+
+if (filtersOpenButton && filtersDrawer && filtersWrapper) {
+
+  filtersOpenButton.addEventListener("click", () => {
+    openDrawer(filtersDrawer)
+  })
+
+  filtersCloseButton?.addEventListener("click", () => {
+    closeDrawer(filtersDrawer)
+  })
+
+  filtersDrawer.addEventListener("click", (event) => {
+    if (!filtersWrapper.contains(event.target)) {
+      closeDrawer(filtersDrawer)
+    }
+  })
+}

@@ -1,8 +1,8 @@
-<div class="mobile-menu">
-    <div class="mobile-menu__wrapper">
+<div class="mobile-menu drawer">
+    <div class="mobile-menu__wrapper drawer__wrapper">
         <div class="mobile-menu__header">
             <img src="../images/logo.svg" alt="логотип" class="mobile-menu__logo">
-            <img src="../images/close.svg" alt="крестик" class="mobile-menu__close-icon">
+            <img src="../images/close.svg" alt="крестик" class="drawer__close-icon">
         </div>
 
         <div class="mobile-menu__content">

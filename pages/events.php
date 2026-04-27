@@ -20,7 +20,35 @@
     require_once dirname(__DIR__) . '/template-parts/header.php';
     renderHeader('dark', 'events');
     require_once dirname(__DIR__) . '/template-parts/breadcrumbs.php';
+    require_once dirname(__DIR__) . '/template-parts/select.php';
+    require_once dirname(__DIR__) . '/template-parts/checkbox.php';
+
+    $eventTypeOptions = ['Выставка', 'Экскурсия', 'Мастер-класс', 'Лекция'];
+    $museumTypeOptions = ['Краеведческий музей', 'Исторический музей', 'Художественный музей', 'Военно-исторический музей'];
     ?>
+
+    <div class="drawer events-filters drawer_open">
+        <div class="drawer__wrapper events-filters__wrapper">
+            <div class="events-filters__header">
+                <h2 class="events-filters__title">Фильтры</h2>
+                <img src="../images/close-brown-2.svg" alt="крестик" class="drawer__close-icon">
+            </div>
+
+            <div class="events-filters__content">
+                <div class="events-filters__filter-selects">
+                    <?php renderSelect('Вид мероприятия', $eventTypeOptions, 'events-filters__select'); ?>
+                    <?php renderSelect('Тип музея', $museumTypeOptions, 'events-filters__select'); ?>
+                </div>
+                <div class="events-filters__options">
+                    <?php renderCheckbox('is_child_event', 'Детское мероприятие'); ?>
+                    <?php renderCheckbox('has_pushkin_card', 'Пушкинская карта'); ?>
+                </div>
+            </div>
+            <div class="events-filters__futter">
+                <button class="filter-button filter-button__reset events-filters__btn">Сбросить фильтры</button>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="events-page">
@@ -32,56 +60,20 @@
 
                 <div class="events-page__filters">
                     <div class="events-page__filter-selects">
-                        <div class="select">
-                            <button class="select__button" type="button">
-                                <span class="select__text">Вид мероприятия</span>
-                                <span class="select__icon_arrow"><img src="../images/arrow-down.svg" alt=""> </span>
-                                <span class="select__icon_cross"><img src="../images/close-black.svg" alt=""> </span>
-
-                            </button>
-
-                            <ul class="select__dropdown">
-                                <li class="select__option">Выставка</li>
-                                <li class="select__option">Экскурсия</li>
-                                <li class="select__option">Мастер-класс</li>
-                                <li class="select__option">Лекция</li>
-                            </ul>
-                        </div>
-
-                        <div class="select">
-                            <button class="select__button" type="button">
-                                <span class="select__text">Тип музея</span>
-                                <span class="select__icon_arrow"><img src="../images/arrow-down.svg" alt="стрелка"> </span>
-                                <span class="select__icon_cross"><img src="../images/close-black.svg" alt="крестик"> </span>   
-                            </button>
-
-                            <ul class="select__dropdown">
-                                <li class="select__option">Краеведческий музей</li>
-                                <li class="select__option">Исторический музей</li>
-                                <li class="select__option">Художественный музей</li>
-                                <li class="select__option">Военно-исторический музей</li>
-                            </ul>
-                        </div>
+                        <?php renderSelect('Вид мероприятия', $eventTypeOptions); ?>
+                        <?php renderSelect('Тип музея', $museumTypeOptions); ?>
                     </div>
 
                     <div class="events-page__filter-options">
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="is_child_event">
-                            <span class="checkbox__box"></span>
-                            <span class="checkbox__text">Детское мероприятие</span>
-                        </label>
-
-                        <label class="checkbox">
-                            <input class="checkbox__input" type="checkbox" name="has_pushkin_card">
-                            <span class="checkbox__box"></span>
-                            <span class="checkbox__text">Пушкинская карта</span>
-                        </label>
+                        <?php renderCheckbox('is_child_event', 'Детское мероприятие'); ?>
+                        <?php renderCheckbox('has_pushkin_card', 'Пушкинская карта'); ?>
                     </div>
 
-                     <div class="events-page__filter-actions">
-                        <button class="filter-button"><img src="../images/options.svg" alt="настройки">Фильтры</button>   
-                        <button class="filter-button filter-button__reset">Сбросить фильтры</button>   
-                     </div>   
+                    <div class="events-page__filter-actions">
+                        <button class="filter-button events-page__btn-toggle"><img src="../images/options.svg"
+                                alt="настройки">Фильтры</button>
+                        <button class="filter-button filter-button__reset">Сбросить фильтры</button>
+                    </div>
                 </div>
 
                 <?php
@@ -102,7 +94,7 @@
     <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/select.js"></script>
+    <script src="../js/filters.js"></script>
 </body>
 
 </html>
