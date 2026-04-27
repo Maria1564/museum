@@ -7,10 +7,10 @@
 
         <div class="mobile-menu__content">
             <nav class="mobile-menu__list">
-                <li><a href="#" class="mobile-menu__item">О музее</a></li>
+                <li><a href="../pages/index.php" class="mobile-menu__item">О музее</a></li>
                 <li><a href="#" class="mobile-menu__item">Посетителям</a></li>
                 <li><a href="#" class="mobile-menu__item">Музей Завершье</a></li>
-                <li><a href="#" class="mobile-menu__item">Мероприятия</a></li>
+                <li><a href="../pages/events.php" class="mobile-menu__item">Мероприятия</a></li>
                 <li><a href="#" class="mobile-menu__item">Филиалы</a></li>
                 <li><a href="#" class="mobile-menu__item">Библиотека</a></li>
                 <li><a href="#" class="mobile-menu__item">Контакты</a></li>

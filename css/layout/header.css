@@ -52,6 +52,7 @@
 
 .header-top__phone {
     display: flex;
+    align-items: center;
     gap: 12px;
     position: relative;
 }

@@ -24,10 +24,10 @@
     require_once dirname(__DIR__) . '/template-parts/checkbox.php';
 
     $eventTypeOptions = ['Выставка', 'Экскурсия', 'Мастер-класс', 'Лекция'];
-    $museumTypeOptions = ['Краеведческий музей', 'Исторический музей', 'Художественный музей', 'Военно-исторический музей'];
+    $museumTypeOptions = ['Краеведческий музей', 'Исторический музей', 'Художественный музей', 'Военно-исторический музей', "Информационно-образовательный и выставочный центр"];
     ?>
 
-    <div class="drawer events-filters drawer_open">
+    <div class="drawer events-filters">
         <div class="drawer__wrapper events-filters__wrapper">
             <div class="events-filters__header">
                 <h2 class="events-filters__title">Фильтры</h2>

@@ -8,6 +8,12 @@ filterSelects.forEach(select => {
         const button = e.target.closest(".select__button");
 
         if (button && !select.classList.contains("select_selected")) {
+            filterSelects.forEach(openedSelect => {
+                if (openedSelect !== select) {
+                    openedSelect.classList.remove("select_open");
+                }
+            });
+
             select.classList.toggle("select_open");
         }
 
@@ -27,6 +33,16 @@ filterSelects.forEach(select => {
             text.textContent = option.textContent.trim();
             select.classList.add("select_selected");
         }
+    });
+});
+
+document.addEventListener("click", (e) => {
+    if (e.target.closest(".select")) {
+        return;
+    }
+
+    filterSelects.forEach(select => {
+        select.classList.remove("select_open");
     });
 });
 

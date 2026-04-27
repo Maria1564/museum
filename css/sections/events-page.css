@@ -102,6 +102,10 @@
 }
 
 @media (max-width: 576px) {
+    .events-page {
+        margin-bottom: 40px;
+    }
+
     .events-page__header {
         margin-bottom: 20px;
     }
