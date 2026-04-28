@@ -1,5 +1,7 @@
 const heroSlider = document.querySelector('.hero-slider__swiper');
 const otherSlider = document.querySelector('.other__swiper');
+const relatedEventsSlider = document.querySelector('.related-events__swiper');
+let relatedEventsSwiper = null;
 
 if (heroSlider) {
   new Swiper(heroSlider, {
@@ -30,6 +32,34 @@ if (otherSlider) {
     },
   });
 }
+
+const initRelatedEventsSlider = () => {
+  if (!relatedEventsSlider) {
+    return
+  }
+
+  if (window.innerWidth > 576 && !relatedEventsSwiper) {
+    relatedEventsSwiper = new Swiper(relatedEventsSlider, {
+      loop: true,
+      speed: 700,
+      slidesPerView: 'auto',
+      spaceBetween: 60,
+      navigation: {
+        nextEl: '.related-events__button_next',
+        prevEl: '.related-events__button_prev',
+      },
+    });
+  }
+
+  if (window.innerWidth <= 576 && relatedEventsSwiper) {
+    relatedEventsSwiper.destroy(true, true)
+    relatedEventsSwiper = null
+  }
+}
+
+initRelatedEventsSlider()
+
+window.addEventListener('resize', initRelatedEventsSlider)
 
 
 const btnOpenMenu = document.querySelector(".header-top__menu")

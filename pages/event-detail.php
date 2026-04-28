@@ -19,6 +19,7 @@
     require_once dirname(__DIR__) . '/template-parts/header.php';
     renderHeader('light', 'events');
     require_once dirname(__DIR__) . '/template-parts/tags.php';
+    require_once dirname(__DIR__) . '/template-parts/events-grid.php';
 
     ?>
 
@@ -129,6 +130,34 @@
                             alt="картинка"></div>
                     <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-7.png"
                             alt="картинка"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-section related-events">
+            <div class="container">
+                <div class="related-events__header">
+                    <h2 class="section-title related-events__title">Похожие мероприятия</h2>
+                    <div class="related-events__navigation">
+                        <button class="related-events__button related-events__button_prev" type="button"
+                            aria-label="Предыдущее мероприятие">
+                            <img src="../images/arrow-left-m.svg" alt="стрелка">
+                        </button>
+
+                        <button class="related-events__button related-events__button_next" type="button"
+                            aria-label="Следующее мероприятие">
+                            <img src="../images/arrow-right-m.svg" alt="стрелка">
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper related-events__swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach (getEventsCards() as $event): ?>
+                            <div class="swiper-slide related-events__slide">
+                                <?php renderEventCard($event); ?>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
             </div>
         </section>

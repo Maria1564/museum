@@ -130,7 +130,7 @@
         margin-top: calc(42px + 70px);
     }
 
-    .swiper-slide {
+    .hero-slider__slide {
         height: 572px;
     }
 }
