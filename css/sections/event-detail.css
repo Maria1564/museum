@@ -1,0 +1,64 @@
+.event-section {
+    padding: 80px 0;
+}
+
+.event-section + .event-section {
+    padding-top: 0;
+}
+
+/* event-about  */
+.event-about__layout {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event-about__content {
+    max-width: 680px;
+    flex: 1 1;
+}
+
+.event-about__tickets {
+    max-width: 380px;
+}
+
+.event-about__title {
+    margin-bottom: 30px;
+}
+
+.event-about__description,
+.event-about__tickets-name,
+.event-about__tickets-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.event-about__tickets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.event-about__tickets-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+@media (max-width: 900px) {
+    .event-about__layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .event-section {
+        padding: 40px 0;
+    }
+
+
+}
+
