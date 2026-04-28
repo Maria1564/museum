@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="../css/style.css?v=3.0.2">
 </head>
 
@@ -168,20 +169,34 @@
             <div class="container">
                 <h2 class="section-title event-gallery__title">Фотогалерея</h2>
                 <div class="event-gallery__grid">
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-1.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-2.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-3.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-4.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-5.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-6.png"
-                            alt="картинка"></div>
-                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-7.png"
-                            alt="картинка"></div>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-1.png"
+                        data-fancybox="event-gallery" data-caption="Интерьер музейного зала">
+                        <img src="../images/event-gallery/photo-1.png" alt="Интерьер музейного зала">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-2.png"
+                        data-fancybox="event-gallery" data-caption="Фрагмент музейной экспозиции">
+                        <img src="../images/event-gallery/photo-2.png" alt="Фрагмент музейной экспозиции">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-3.png"
+                        data-fancybox="event-gallery" data-caption="Экспонаты музея">
+                        <img src="../images/event-gallery/photo-3.png" alt="Экспонаты музея">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-4.png"
+                        data-fancybox="event-gallery" data-caption="Зал музея">
+                        <img src="../images/event-gallery/photo-4.png" alt="Зал музея">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-5.png"
+                        data-fancybox="event-gallery" data-caption="Историческая экспозиция">
+                        <img src="../images/event-gallery/photo-5.png" alt="Историческая экспозиция">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-6.png"
+                        data-fancybox="event-gallery" data-caption="Музейная коллекция">
+                        <img src="../images/event-gallery/photo-6.png" alt="Музейная коллекция">
+                    </a>
+                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-7.png"
+                        data-fancybox="event-gallery" data-caption="Деталь экспозиции">
+                        <img src="../images/event-gallery/photo-7.png" alt="Деталь экспозиции">
+                    </a>
                 </div>
             </div>
         </section>
@@ -220,6 +235,10 @@
     <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="event-gallery"]', {});
+    </script>
     <script src="../js/main.js?v=3.0.1"></script>
 </body>
 

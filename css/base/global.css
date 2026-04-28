@@ -184,4 +184,8 @@ li {
     .editor-content h3 {
         font-size: 20px;
     }
+
+    .editor-content img {
+        margin: 30px 0;
+    }
 }
