@@ -20,6 +20,7 @@ function getEventsCards(): array
             'description' => $description,
             'place' => $place,
             'price' => $price,
+            'url' => '../pages/event-detail.php'
         ],
         [
             'image' => '../images/event-2.png',
@@ -32,6 +33,7 @@ function getEventsCards(): array
             'description' => $description,
             'place' => $place,
             'price' => $price,
+            'url' => '../pages/event-detail.php'
         ],
         [
             'image' => '../images/event-3.png',
@@ -44,6 +46,7 @@ function getEventsCards(): array
             'description' => $description,
             'place' => $place,
             'price' => $price,
+            'url' => '../pages/event-detail.php'
         ],
         [
             'image' => '../images/event-1.png',
@@ -56,6 +59,7 @@ function getEventsCards(): array
             'description' => $description,
             'place' => $place,
             'price' => $price,
+            'url' => '../pages/event-detail.php'
         ],
         [
             'image' => '../images/event-2.png',
@@ -68,6 +72,7 @@ function getEventsCards(): array
             'description' => $description,
             'place' => $place,
             'price' => $price,
+            'url' => '../pages/event-detail.php'
         ],
     ];
 }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.0">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.1">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
     renderHeader('light', 'events');
     require_once dirname(__DIR__) . '/template-parts/tags.php';
     require_once dirname(__DIR__) . '/template-parts/events-grid.php';
+    require_once dirname(__DIR__) . '/template-parts/other.php';
 
     ?>
 
@@ -161,10 +162,14 @@
                 </div>
             </div>
         </section>
+
+        <?php renderOther(); ?>
     </main>
 
+     <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js?v=3.0.1"></script>
 </body>
 
 </html>
