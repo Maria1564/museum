@@ -19,6 +19,7 @@
 
     <?php
     require_once dirname(__DIR__) . '/template-parts/header.php';
+    require_once dirname(__DIR__) . '/template-parts/tags.php';
     renderHeader('light', 'about');
     ?>
 
@@ -33,10 +34,7 @@
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
-                                <div class="hero-slider__meta">
-                                    <span class="hero-slider__meta-item">Выставка</span>
-                                    <span class="hero-slider__meta-item">16+</span>
-                                </div>
+                                <?php renderTags(['Выставка', '16+'], 'hero-slider__tags'); ?>
                                 <h1 class="hero-slider__title">Из глубины веков. <br>Археология Калужского края</h1>
                                 <div class="hero-slider__footer">
                                     <p class="hero-slider__description">
@@ -58,10 +56,7 @@
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
-                                <div class="hero-slider__meta">
-                                    <span class="hero-slider__meta-item">Выставка</span>
-                                    <span class="hero-slider__meta-item">16+</span>
-                                </div>
+                                <?php renderTags(['Выставка', '16+'], 'hero-slider__tags'); ?>
                                 <h1 class="hero-slider__title">Из глубины веков. <br>Археология Калужского края</h1>
                                 <div class="hero-slider__footer">
                                     <p class="hero-slider__description">
@@ -83,10 +78,7 @@
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
-                                <div class="hero-slider__meta">
-                                    <span class="hero-slider__meta-item">Выставка</span>
-                                    <span class="hero-slider__meta-item">16+</span>
-                                </div>
+                                <?php renderTags(['Выставка', '16+'], 'hero-slider__tags'); ?>
                                 <h1 class="hero-slider__title">Из глубины веков. <br>Археология Калужского края</h1>
                                 <div class="hero-slider__footer">
                                     <p class="hero-slider__description">

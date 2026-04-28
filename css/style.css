@@ -11,6 +11,7 @@
 @import url('./components/checkbox.css');
 @import url('./components/drawer.css');
 @import url('./components/select.css');
+@import url('./components/tags.css');
 
 @import url('./sections/hero-slider.css');
 @import url('./sections/events-preview.css');
@@ -18,3 +19,4 @@
 @import url('./sections/about.css');
 @import url('./sections/other.css');
 @import url('./sections/events-page.css');
+@import url('./sections/event-hero.css');

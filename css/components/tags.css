@@ -1,0 +1,26 @@
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.tags__item {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.tags__item:not(:first-child)::before {
+    position: absolute;
+    top: 0;
+    left: calc(-25px / 2);
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: var(--color-gray);
+    opacity: 30%;
+}

@@ -149,7 +149,7 @@
     color: var(--color-black);
 }
 
-.header_dark .nav__item_active .nav__item-link{
+.nav__item_active .nav__item-link{
     color: var(--color-gold);
 }
 
