@@ -110,6 +110,28 @@
                 </div>
             </div>
         </section>
+
+        <section class="event-section event-gallery">
+            <div class="container">
+                <h2 class="section-title event-gallery__title">Фотогалерея</h2>
+                <div class="event-gallery__grid">
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-1.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-2.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-3.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-4.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-5.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-6.png"
+                            alt="картинка"></div>
+                    <div class="event-gallery__img-container"><img src="../images/event-gallery/photo-7.png"
+                            alt="картинка"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
