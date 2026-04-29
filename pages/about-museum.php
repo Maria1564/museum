@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О музее</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.6">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.10">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,6 +86,9 @@
                         </div>
                         <div class="swiper-slide museum-history__year-slide">
                             <button class="museum-history__year" type="button">2019</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2020</button>
                         </div>
                     </div>
                 </div>
@@ -188,6 +191,17 @@
                                     alt="Музейный комплекс">
                             </div>
                         </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2020</span>
+                                    <p class="museum-history__description">Конец истории (КОВИД)</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
+                                    alt="Музейный комплекс">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -226,7 +240,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/main.js?v=3.0.2"></script>
-    <script src="../js/museum-history.js?v=1.0.1"></script>
+    <script src="../js/museum-history.js?v=1.0.4"></script>
 </body>
 
 </html>
