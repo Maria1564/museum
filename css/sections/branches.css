@@ -9,6 +9,60 @@
     margin-bottom: 40px;
 }
 
+.branches__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.branches__card {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+}
+
+.branches__card-img {
+    border-radius: 6px;
+    max-width: 480px;
+    overflow: hidden;
+}
+
+.branches__card-img>img {
+    aspect-ratio: 480 / 240;
+    width: 100%;
+    object-fit: cover;
+}
+
+.branches__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.branches__card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--color-black);
+}
+
+.branches__list-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.branches__item-meta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.branches__item-meta > img {
+    width: 22px;
+    height: 22px;
+}
+
 @media (max-width: 576px) {
     .branches {
         margin-bottom: 20px;

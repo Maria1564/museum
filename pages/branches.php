@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,8 @@
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
     require_once dirname(__DIR__) . '/template-parts/checkbox.php';
     require_once dirname(__DIR__) . '/template-parts/other.php';
+    require_once dirname(__DIR__) . '/template-parts/more-link.php';
+
     ?>
 
     <main>
@@ -33,7 +35,36 @@
                     <?php renderPageHeader('Филиалы', ['Главная', 'Филиалы']); ?>
                     <?php renderCheckbox('branches_filter', 'Работают сейчас', true); ?>
                 </div>
+                <div class="branches__list">
+                    <article class="branches__card">
+                        <div  class="branches__card-img">
+                            <img src="../images/branches/location-card.png" alt="филиал 1">
+                        </div>
+                        <div class="branches__card-content">
+                            <p class="branches__card-title">Музейно-краеведческий комплекс «Усадьба Золотарёвых»</p>
+
+                            <ul class="branches__list-meta">
+                                <li class="branches__item-meta">
+                                    <img src="../images/map-pin.svg" alt="поинт">
+                                    <span class="branches__item-meta-text">248000, г. Калуга, ул. Пушкина, д. 14.</span>
+                                </li>
+                                <li class="branches__item-meta">
+                                    <img src="../images/clock.svg" alt="часы">
+                                    <span class="branches__item-meta-text">Вторник-пятница, воскресенье с 9:30 до
+                                        18:00</span>
+                                </li>
+                                <li class="branches__item-meta">
+                                    <img src="../images/phone-dark.svg" alt=телефон">
+                                    <span class="branches__item-meta-text">8 (4842) 72-16-18</span>
+                                </li>
+                            </ul>
+
+                            <?php renderMoreLink("#"); ?>
+                        </div>
+                    </article>
+                </div>
             </div>
+
         </section>
 
 
