@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афиша мероприятий</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.6">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.11">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                     <?php renderCheckbox('has_pushkin_card', 'Пушкинская карта'); ?>
                 </div>
             </div>
-            <div class="events-filters__futter">
+            <div class="events-filters__footer">
                 <button class="filter-button filter-button__reset events-filters__btn">Сбросить фильтры</button>
             </div>
         </div>

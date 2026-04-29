@@ -1,0 +1,20 @@
+.branches {
+    margin-bottom: 89px;
+}
+
+.branches__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+    .branches {
+        margin-bottom: 20px;
+    }
+
+    .branches__header {
+        margin-bottom: 20px;
+    }
+}

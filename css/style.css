@@ -13,6 +13,7 @@
 @import url('./components/select.css');
 @import url('./components/tags.css');
 @import url('./components/page-header.css');
+@import url('./components/more-link.css');
 
 @import url('./sections/hero-slider.css');
 @import url('./sections/events-preview.css');
@@ -25,3 +26,4 @@
 @import url('./sections/about-museum.css');
 @import url('./sections/museum-history.css');
 @import url('./sections/visitors.css');
+@import url('./sections/branches.css');

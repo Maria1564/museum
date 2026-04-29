@@ -1,0 +1,29 @@
+.more-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    padding: 19px 10px;
+    border: 1px solid var(--main-brown);
+    border-radius: 6px;
+    background-color: #FFFFFF80;
+    backdrop-filter: blur(20px);
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.more-link:hover {
+    background-color: var(--main-brown);
+    color: var(--color-white);
+}
+
+@media (max-width: 576px) {
+    .more-link {
+        width: 100%;
+    }
+}

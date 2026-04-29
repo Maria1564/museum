@@ -106,22 +106,6 @@
     color: var(--color-black-2);
 }
 
-.event-card__btn {
-    width: 218px;
-    padding: 19px 10px;
-    text-align: center;
-    background-color: #FFFFFF80;
-    border: 1px solid var(--main-brown);
-    backdrop-filter: blur(20px);
-    border-radius: 6px;
-    transition: all .5s;
-}
-
-.event-card__btn:hover {
-    background-color: var(--main-brown);
-    color: var(--color-white);
-}
-
 .event-card__schedule {
     background-color: var(--color-white);
     position: absolute;
@@ -197,10 +181,6 @@
 
     .event-card__description {
         font-size: 13px;
-    }
-
-    .event-card__btn {
-        width: 100%;
     }
 
     .event-card__schedule {

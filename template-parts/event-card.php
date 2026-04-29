@@ -1,4 +1,6 @@
 <?php
+require_once dirname(__DIR__) . '/template-parts/more-link.php';
+
 function renderEventCard(array $event, string $className = ''): void
 {
     $classes = trim('event-card ' . $className);
@@ -93,7 +95,7 @@ function renderEventCard(array $event, string $className = ''): void
                 </div>
             <?php endif; ?>
 
-            <a href="<?= htmlspecialchars($url, ENT_QUOTES, 'UTF-8') ?>" class="event-card__btn btn-text btn-text_black">Подробнее</a>
+            <?php renderMoreLink($url); ?>
         </div>
     </div>
     <?php

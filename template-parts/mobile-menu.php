@@ -11,7 +11,7 @@
                 <li><a href="../pages/visitors.php" class="mobile-menu__item">Посетителям</a></li>
                 <li><a href="#" class="mobile-menu__item">Музей Завершье</a></li>
                 <li><a href="../pages/events.php" class="mobile-menu__item">Мероприятия</a></li>
-                <li><a href="#" class="mobile-menu__item">Филиалы</a></li>
+                <li><a href="../pages/branches.php" class="mobile-menu__item">Филиалы</a></li>
                 <li><a href="#" class="mobile-menu__item">Библиотека</a></li>
                 <li><a href="#" class="mobile-menu__item">Контакты</a></li>
             </nav>
