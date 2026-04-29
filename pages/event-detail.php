@@ -28,7 +28,7 @@
 
     <main>
         <section class="event-hero">
-            <img src="../images/event-hero-bg.jpg" alt="картинка" class="event-hero__bg">
+            <img src="../images/event-detail/event-hero-bg.jpg" alt="картинка" class="event-hero__bg">
             <div class="event-hero__overlay"></div>
 
             <div class="event-hero__wrapper">
@@ -46,26 +46,26 @@
                     <div class="event-hero__details">
                         <div class="event-hero__info-grid">
                             <div class="event-hero__info-item">
-                                <img src="../images/calendar-light.svg" alt="календарь" class="event-hero__info-icon">
+                                <img src="../images/event-detail/calendar-light.svg" alt="календарь" class="event-hero__info-icon">
                                 <p class="event-hero__info-text">31 Марта – 14 Апреля</p>
                             </div>
                             <div class="event-hero__info-item">
-                                <img src="../images/ticket-light.svg" alt="билет" class="event-hero__info-icon">
+                                <img src="../images/event-detail/ticket-light.svg" alt="билет" class="event-hero__info-icon">
                                 <p class="event-hero__info-text">Вход свободный</p>
                             </div>
                             <div class="event-hero__info-item">
-                                <img src="../images/clock-light.svg" alt="часы" class="event-hero__info-icon">
+                                <img src="../images/event-detail/clock-light.svg" alt="часы" class="event-hero__info-icon">
                                 <p class="event-hero__info-text">10:00 - 18:00</p>
                             </div>
                             <div class="event-hero__info-item">
-                                <img src="../images/map-pin-light.svg" alt="карта" class="event-hero__info-icon">
+                                <img src="../images/event-detail/map-pin-light.svg" alt="карта" class="event-hero__info-icon">
                                 <p class="event-hero__info-text">Калуга, ул Пушкина, д 14</p>
                             </div>
                         </div>
 
                         <div class="event-hero__action">
                             <a href="#" class="event-hero__btn">КУПИТЬ БИЛЕТ</a>
-                            <img src="../images/pushkin-card.svg" alt="пушкинская карта">
+                            <img src="../images/event-detail/pushkin-card.svg" alt="пушкинская карта">
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                                 <li>Осмотр предметов быта, архивных материалов и произведений искусства.</li>
                             </ul>
 
-                            <img src="../images/event-gallery/photo-1.png" alt="Интерьер музейного зала">
+                            <img src="../images/event-detail/gallery/photo-1.png" alt="Интерьер музейного зала">
 
                             <p>
                                 После просмотра основной части экспозиции гости смогут задать вопросы экскурсоводу и
@@ -124,7 +124,7 @@
                                 <li>Дождаться начала экскурсии в зоне сбора группы.</li>
                             </ol>
 
-                            <img src="../images/event-gallery/photo-5.png" alt="Фрагмент музейной экспозиции">
+                            <img src="../images/event-detail/gallery/photo-5.png" alt="Фрагмент музейной экспозиции">
 
                             <p>
                                 Текст после изображения должен отображаться с обычным интервалом и не прилипать к
@@ -169,33 +169,33 @@
             <div class="container">
                 <h2 class="section-title event-gallery__title">Фотогалерея</h2>
                 <div class="event-gallery__grid">
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-1.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-1.png"
                         data-fancybox="event-gallery" data-caption="Интерьер музейного зала">
-                        <img src="../images/event-gallery/photo-1.png" alt="Интерьер музейного зала">
+                        <img src="../images/event-detail/gallery/photo-1.png" alt="Интерьер музейного зала">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-2.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-2.png"
                         data-fancybox="event-gallery" data-caption="Фрагмент музейной экспозиции">
-                        <img src="../images/event-gallery/photo-2.png" alt="Фрагмент музейной экспозиции">
+                        <img src="../images/event-detail/gallery/photo-2.png" alt="Фрагмент музейной экспозиции">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-3.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-3.png"
                         data-fancybox="event-gallery" data-caption="Экспонаты музея">
-                        <img src="../images/event-gallery/photo-3.png" alt="Экспонаты музея">
+                        <img src="../images/event-detail/gallery/photo-3.png" alt="Экспонаты музея">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-4.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-4.png"
                         data-fancybox="event-gallery" data-caption="Зал музея">
-                        <img src="../images/event-gallery/photo-4.png" alt="Зал музея">
+                        <img src="../images/event-detail/gallery/photo-4.png" alt="Зал музея">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-5.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-5.png"
                         data-fancybox="event-gallery" data-caption="Историческая экспозиция">
-                        <img src="../images/event-gallery/photo-5.png" alt="Историческая экспозиция">
+                        <img src="../images/event-detail/gallery/photo-5.png" alt="Историческая экспозиция">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-6.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-6.png"
                         data-fancybox="event-gallery" data-caption="Музейная коллекция">
-                        <img src="../images/event-gallery/photo-6.png" alt="Музейная коллекция">
+                        <img src="../images/event-detail/gallery/photo-6.png" alt="Музейная коллекция">
                     </a>
-                    <a class="event-gallery__img-container" href="../images/event-gallery/photo-7.png"
+                    <a class="event-gallery__img-container" href="../images/event-detail/gallery/photo-7.png"
                         data-fancybox="event-gallery" data-caption="Деталь экспозиции">
-                        <img src="../images/event-gallery/photo-7.png" alt="Деталь экспозиции">
+                        <img src="../images/event-detail/gallery/photo-7.png" alt="Деталь экспозиции">
                     </a>
                 </div>
             </div>

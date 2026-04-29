@@ -30,7 +30,7 @@
             <div class="swiper hero-slider__swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="../images/slide-1.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/index/slide-1.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="../images/slide-2.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/index/slide-2.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="swiper-slide hero-slider__slide">
-                        <img class="hero-slider__image" src="../images/slide-1.png" alt="слайд">
+                        <img class="hero-slider__image" src="../images/index/slide-1.png" alt="слайд">
                         <div class="hero-slider__overlay"></div>
                         <div class="container">
                             <div class="hero-slider__content">
@@ -171,25 +171,25 @@
 
                             <!-- social-card  -->
                             <a href="#" class="social-card">
-                                <img src="../images/tg.svg" alt="">
+                                <img src="../images/index/tg.svg" alt="">
                                 <span class="social-card__text">Telegram</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="../images/max.svg" alt="">
+                                <img src="../images/index/max.svg" alt="">
                                 <span class="social-card__text">Max</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="../images/vk.svg" alt="">
+                                <img src="../images/index/vk.svg" alt="">
                                 <span class="social-card__text">Вконтакте</span>
                             </a>
                             <a href="#" class="social-card">
-                                <img src="../images/ok.svg" alt="">
+                                <img src="../images/index/ok.svg" alt="">
                                 <span class="social-card__text">Одноклассники</span>
                             </a>
                         </div>
                     </div>
                     <div class="social-news__right">
-                            <img src="../images/mobile.png" alt="">
+                            <img src="../images/index/mobile.png" alt="">
                     </div>
                 </div>
             </div>

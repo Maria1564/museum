@@ -31,7 +31,7 @@
         <div class="drawer__wrapper events-filters__wrapper">
             <div class="events-filters__header">
                 <h2 class="events-filters__title">Фильтры</h2>
-                <img src="../images/close-brown-2.svg" alt="крестик" class="drawer__close-icon">
+                <img src="../images/events/close-brown-2.svg" alt="крестик" class="drawer__close-icon">
             </div>
 
             <div class="events-filters__content">
@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="events-page__filter-actions">
-                        <button class="filter-button events-page__btn-toggle"><img src="../images/options.svg"
+                        <button class="filter-button events-page__btn-toggle"><img src="../images/events/options.svg"
                                 alt="настройки">Фильтры</button>
                         <button class="filter-button filter-button__reset">Сбросить фильтры</button>
                     </div>
