@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.2">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,7 +161,7 @@
                 <div class="social-news__wrapper">
                     <div class="social-news__left">
                         <div class="social-news__content">
-                            <h2 class="title social-news__title">Читайте наши новости <br> в социальных сетях</h2>
+                            <h2 class="social-news__title">Читайте наши новости <br> в социальных сетях</h2>
                             <div class="social-news__line"></div>
                             <p class="social-news__description">Свежие новости, анонсы выставок, редкие экспонаты и
                                 фоторепортажи — всё это мы публикуем в наших социальных сетях. Подписывайтесь, чтобы
@@ -200,7 +200,7 @@
         <section class="about">
             <div class="container">
                 <div class="about__header">
-                    <h2 class="title about__title">О Калужском объединённом музее-заповеднике</h2>
+                    <h2 class="about__title">О Калужском объединённом музее-заповеднике</h2>
                     <p class="about__description">Калужский объединенный музей-заповедник — это крупнейшее музейное
                         объединение региона, которое бережно хранит многовековую историю и культурное наследие
                         Калужского края. Мы объединяем уникальные площадки — от величественных дворянских усадеб XIX

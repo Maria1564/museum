@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афиша мероприятий</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.2">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <?php
     require_once dirname(__DIR__) . '/template-parts/header.php';
     renderHeader('dark', 'events');
-    require_once dirname(__DIR__) . '/template-parts/breadcrumbs.php';
+    require_once dirname(__DIR__) . '/template-parts/page-header.php';
     require_once dirname(__DIR__) . '/template-parts/select.php';
     require_once dirname(__DIR__) . '/template-parts/checkbox.php';
 
@@ -53,10 +53,7 @@
     <main>
         <section class="events-page">
             <div class="container">
-                <div class="events-page__header">
-                    <?php renderBreadcrumbs(['Главная', 'Афиша мероприятий']); ?>
-                    <h1 class="events-page__title">Афиша мероприятий</h1>
-                </div>
+                <?php renderPageHeader('Афиша мероприятий', ['Главная', 'Афиша мероприятий'], 'events-page__header'); ?>
 
                 <div class="events-page__filters">
                     <div class="events-page__filter-selects">

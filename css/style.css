@@ -12,6 +12,7 @@
 @import url('./components/drawer.css');
 @import url('./components/select.css');
 @import url('./components/tags.css');
+@import url('./components/page-header.css');
 
 @import url('./sections/hero-slider.css');
 @import url('./sections/events-preview.css');

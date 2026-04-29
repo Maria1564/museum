@@ -43,7 +43,7 @@ function renderHeader(string $theme = 'light', string $activePage = ''): void
         <div class="header__bottom header-bottom">
             <div class="container header__container-inner">
                 <ul class="nav__list">
-                    <li class="nav__item <?= $activePage === 'about' ? 'nav__item_active' : '' ?>"><a href="../pages/index.php" class="nav__item-link">О музее</a></li>
+                    <li class="nav__item <?= $activePage === 'about' ? 'nav__item_active' : '' ?>"><a href="../pages/about-museum.php" class="nav__item-link">О музее</a></li>
                     <li class="nav__item <?= $activePage === 'visitors' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Посетителям</a></li>
                     <li class="nav__item <?= $activePage === 'zavershye' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Музей Завершье</a></li>
                     <li class="nav__item <?= $activePage === 'events' ? 'nav__item_active' : '' ?>"><a href="../pages/events.php" class="nav__item-link">Мероприятия</a></li>

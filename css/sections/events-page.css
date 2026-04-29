@@ -1,18 +1,9 @@
 .events-page {
-    margin-top: calc(36px + 180px);
     margin-bottom: 115px;
 }
 
 .events-page__header {
     margin-bottom: 40px;
-}
-
-.events-page__title {
-    margin-top: 10px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    color: var(--color-black);
 }
 
 .events-page__filter-options {
@@ -95,24 +86,10 @@
     }
 }
 
-@media (max-width: 900px) {
-    .events-page {
-        margin-top: calc(80px + 20px);
-    }
-}
-
 @media (max-width: 576px) {
     .events-page {
         margin-bottom: 40px;
     }
-
-    .events-page__header {
-        margin-bottom: 20px;
-    }
-
-   .events-page__title {
-    font-size: 28px;
-   } 
 
     .events-page__filter-selects,
     .events-page__filter-options {

@@ -37,7 +37,9 @@
 .social-news__title {
     max-width: 574px;
     font-weight: 700;
+    font-size: 44px;
     line-height: 100%;
+    color: var(--color-black);
 }
 
 .social-news__line {
@@ -95,12 +97,20 @@
         gap: 20px;
     }
 
+    .social-news__title {
+        font-size: 32px;
+    }
+
     .social-news__description {
         font-size: 15px;
     } 
 }
 
 @media (max-width: 576px) {
+    .social-news__title {
+        font-size: 28px;
+    }
+
     .social-news__description {
         font-size: 14px;
     }

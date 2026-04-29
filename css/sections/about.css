@@ -13,7 +13,9 @@
 .about__title {
     max-width: 480px;
     font-weight: 700;
+    font-size: 44px;
     line-height: 110%;
+    color: var(--color-black);
 }
 
 .about__description {
@@ -62,6 +64,10 @@
 }
 
 @media (max-width: 768px) {
+    .about__title {
+        font-size: 32px;
+    }
+
     .about__description {
         font-size: 15px;
     }
@@ -88,5 +94,9 @@
 @media (max-width: 576px) {
     .about {
         padding: 40px 0;
+    }
+
+    .about__title {
+        font-size: 28px;
     }
 }
