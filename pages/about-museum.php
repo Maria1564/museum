@@ -51,12 +51,12 @@
 
             <section class="museum-history">
                 <div class="museum-history__header">
-                    <h2 class="museum-history__title">История музея</h2>
+                    <h2 class="section-title">История музея</h2>
                     <div class="museum-history__navigation">
                         <button class="museum-history__button museum-history__button_prev" type="button"
-                            aria-label="Предыдущий год">←</button>
+                            aria-label="Предыдущий год"><img src="../images/arrow-left-m.svg" alt=""></button>
                         <button class="museum-history__button museum-history__button_next" type="button"
-                            aria-label="Следующий год">→</button>
+                            aria-label="Следующий год"><img src="../images/arrow-right-m.svg" alt=""></button>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@
                                         бесплатного посещения всех своих филиалов для участников специальных программ и
                                         членов их семей.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Зал музея">
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                     <p class="museum-history__description">Продолжилось развитие просветительских
                                         программ, выставочных проектов и музейных маршрутов по Калужской области.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Здание музея">
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                                     <p class="museum-history__description">Коллекции музея пополнялись новыми
                                         материалами, а филиалы расширяли работу с посетителями разных возрастов.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Музейная экспозиция">
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                     <p class="museum-history__description">Музей усилил работу с образовательными
                                         организациями и запустил новые форматы тематических встреч.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Интерьер музея">
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                     <p class="museum-history__description">Выставочные площадки принимали временные
                                         экспозиции, посвященные истории, культуре и природе Калужского края.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Фасад музея">
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                                     <p class="museum-history__description">Развивались экскурсионные программы,
                                         интерактивные занятия и проекты для семейной аудитории.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Территория музея">
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                                     <p class="museum-history__description">Музей продолжил объединять исследовательскую,
                                         выставочную и просветительскую работу филиалов.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Музейный двор">
                             </div>
                         </div>
@@ -183,7 +183,7 @@
                                     <p class="museum-history__description">Появились новые события, направленные на
                                         знакомство гостей с историей региона и музейными коллекциями.</p>
                                 </div>
-                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                <img class="museum-history__image" src="../images/about-museum/exposition.png"
                                     alt="Музейный комплекс">
                             </div>
                         </div>
@@ -197,6 +197,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/main.js?v=3.0.1"></script>
+    <script src="../js/museum-history.js?v=1.0.0"></script>
 </body>
 
 </html>
