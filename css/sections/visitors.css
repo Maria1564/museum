@@ -1,0 +1,13 @@
+.visitors {
+    margin-bottom: 60px;
+}
+
+.visitors__header {
+    margin-bottom: 55px;
+}
+
+@media (max-width: 576px) {
+    .visitors {
+        margin-bottom: 20px;
+    }
+}
