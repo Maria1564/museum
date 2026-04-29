@@ -1,6 +1,9 @@
 const heroSlider = document.querySelector('.hero-slider__swiper');
 const otherSlider = document.querySelector('.other__swiper');
 const relatedEventsSlider = document.querySelector('.related-events__swiper');
+const museumHistorySlider = document.querySelector('.museum-history__swiper');
+const museumHistoryYearsSlider = document.querySelector('.museum-history__years-swiper');
+const museumHistoryYears = document.querySelectorAll('.museum-history__year');
 let relatedEventsSwiper = null;
 
 if (heroSlider) {
@@ -30,6 +33,47 @@ if (otherSlider) {
       nextEl: '.other__button-next',
       prevEl: '.other__button-prev',
     },
+  });
+}
+
+if (museumHistorySlider && museumHistoryYearsSlider && museumHistoryYears.length) {
+  const museumHistoryYearsSwiper = new Swiper(museumHistoryYearsSlider, {
+    slidesPerView: 'auto',
+    spaceBetween: 172,
+    slidesOffsetBefore: 172,
+    slidesOffsetAfter: window.innerWidth,
+    speed: 500,
+    watchSlidesProgress: true,
+  });
+
+  window.addEventListener('resize', () => {
+    museumHistoryYearsSwiper.params.slidesOffsetAfter = window.innerWidth;
+    museumHistoryYearsSwiper.update();
+  });
+
+  const museumHistorySwiper = new Swiper(museumHistorySlider, {
+    speed: 700,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.museum-history__button_next',
+      prevEl: '.museum-history__button_prev',
+    },
+    on: {
+      slideChange(swiper) {
+        museumHistoryYears.forEach((year, index) => {
+          year.classList.toggle('museum-history__year_active', index === swiper.activeIndex);
+        });
+
+        museumHistoryYearsSwiper.slideTo(swiper.activeIndex);
+      },
+    },
+  });
+
+  museumHistoryYears.forEach((year, index) => {
+    year.addEventListener('click', () => {
+      museumHistoryYearsSwiper.slideTo(index);
+      museumHistorySwiper.slideTo(index);
+    });
   });
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О музее</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.3">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +49,147 @@
                 </div>
             </section>
 
+            <section class="museum-history">
+                <div class="museum-history__header">
+                    <h2 class="museum-history__title">История музея</h2>
+                    <div class="museum-history__navigation">
+                        <button class="museum-history__button museum-history__button_prev" type="button"
+                            aria-label="Предыдущий год">←</button>
+                        <button class="museum-history__button museum-history__button_next" type="button"
+                            aria-label="Следующий год">→</button>
+                    </div>
+                </div>
+
+                <div class="swiper museum-history__years-swiper" aria-label="Годы истории музея">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year museum-history__year_active" type="button">2012</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2013</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2014</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2015</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2016</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2017</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2018</button>
+                        </div>
+                        <div class="swiper-slide museum-history__year-slide">
+                            <button class="museum-history__year" type="button">2019</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper museum-history__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2012</span>
+                                    <p class="museum-history__description">Музей-заповедник предоставляет право
+                                        бесплатного посещения всех своих филиалов для участников специальных программ и
+                                        членов их семей.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Зал музея">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2013</span>
+                                    <p class="museum-history__description">Продолжилось развитие просветительских
+                                        программ, выставочных проектов и музейных маршрутов по Калужской области.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Здание музея">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2014</span>
+                                    <p class="museum-history__description">Коллекции музея пополнялись новыми
+                                        материалами, а филиалы расширяли работу с посетителями разных возрастов.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Музейная экспозиция">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2015</span>
+                                    <p class="museum-history__description">Музей усилил работу с образовательными
+                                        организациями и запустил новые форматы тематических встреч.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Интерьер музея">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2016</span>
+                                    <p class="museum-history__description">Выставочные площадки принимали временные
+                                        экспозиции, посвященные истории, культуре и природе Калужского края.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Фасад музея">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2017</span>
+                                    <p class="museum-history__description">Развивались экскурсионные программы,
+                                        интерактивные занятия и проекты для семейной аудитории.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Территория музея">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2018</span>
+                                    <p class="museum-history__description">Музей продолжил объединять исследовательскую,
+                                        выставочную и просветительскую работу филиалов.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Музейный двор">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide museum-history__slide">
+                            <div class="museum-history__content">
+                                <div class="museum-history__text">
+                                    <span class="museum-history__big-year">2019</span>
+                                    <p class="museum-history__description">Появились новые события, направленные на
+                                        знакомство гостей с историей региона и музейными коллекциями.</p>
+                                </div>
+                                <img class="museum-history__image" src="../images/about-museum/museum.png"
+                                    alt="Музейный комплекс">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     </main>
