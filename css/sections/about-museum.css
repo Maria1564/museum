@@ -1,0 +1,13 @@
+.about-museum__header {
+    margin-bottom: 55px;
+}
+
+.about-museum-intro__img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1180 / 520;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border-radius: 6px;
+}
