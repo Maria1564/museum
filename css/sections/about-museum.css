@@ -11,3 +11,17 @@
     margin-bottom: 40px;
     border-radius: 6px;
 }
+
+.museum-collections {
+    margin-bottom: 60px;
+}
+
+.museum-collections__title {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .museum-collections {
+        margin-bottom: 40px;
+    }
+}

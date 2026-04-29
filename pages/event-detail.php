@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.4">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.5">
 </head>
 
 <body>
@@ -239,7 +239,7 @@
     <script>
         Fancybox.bind('[data-fancybox="event-gallery"]', {});
     </script>
-    <script src="../js/main.js?v=3.0.1"></script>
+    <script src="../js/main.js?v=3.0.2"></script>
 </body>
 
 </html>

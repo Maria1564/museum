@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О музее</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.4">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.5">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,7 @@
     renderHeader('dark', 'about');
 
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
+    require_once dirname(__DIR__) . '/template-parts/other.php';
     ?>
 
     <main>
@@ -28,9 +29,9 @@
             <?php renderPageHeader('О музее', ['Главная', 'О музее'], 'about-museum__header'); ?>
 
             <section class="about-museum-intro">
-                 <img src="../images/about-museum/museum.png" alt="Музей" class="about-museum-intro__img">
+                <img src="../images/about-museum/museum.png" alt="Музей" class="about-museum-intro__img">
                 <div class="about-museum-intro__content editor-content">
-                   
+
 
                     <p>Калужский объединенный музей-заповедник — это ведущее научное и просветительское учреждение
                         региона, объединяющее под своим началом 24 филиала по всей Калужской области. Мы являемся
@@ -191,13 +192,41 @@
                 </div>
             </section>
 
+
+            <section class="museum-collections">
+                <h2 class="section-title museum-collections__title">Фонды и коллекции</h2>
+                <div class="editor-content">
+                    <p>Собрание музея-заповедника — это богатейшая сокровищница артефактов, распределенная по
+                        тематическим отделам и залам:
+                        Отдел истории: Занимает 11 залов главного здания, раскрывая летопись края начиная с эпохи
+                        первобытнообщинного строя. Особое внимание уделено культурной жизни XIX века: в экспозициях
+                        представлены материалы о пребывании на Калужской земле великих классиков — Н.В. Гоголя, Л.Н.
+                        Толстого, Ф.М. Достоевского и И.С. Тургенева</p>
+                    <p>Отдел природы: Знакомит посетителей с флорой и фауной региона через масштабные красочные диорамы
+                        и уникальные биогруппы, включая интерактивные инсталляции, такие как «Смешанный лес» и «Птицы на
+                        стилизованном дереве»
+                        .</p>
+                    <p>Военно-исторические коллекции: Экспозиция «В годы суровых испытаний» подробно освещает события
+                        1941–1945 гг., а интерактивный проект «Калужская крепость» погружает в эпоху средневекового
+                        оборонительного зодчества
+                        .</p>
+                    <p>Музей ведет активную научную и издательскую деятельность, публикуя материалы в собственных
+                        журналах «Калужское наследие» и «Вопросы истории», которые доступны в нашей электронной
+                        библиотеке.</p>
+                </div>
+            </section>
+
+
         </div>
+
+        <?php renderOther(); ?>
     </main>
 
+    <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js?v=3.0.1"></script>
-    <script src="../js/museum-history.js?v=1.0.0"></script>
+    <script src="../js/main.js?v=3.0.2"></script>
+    <script src="../js/museum-history.js?v=1.0.1"></script>
 </body>
 
 </html>
