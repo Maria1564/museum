@@ -7,7 +7,7 @@
     <title>Филиалы</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.15">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.16">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -231,7 +231,7 @@
     <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js?v=3.0.4"></script>
+    <script src="../js/main.js?v=3.0.5"></script>
 </body>
 
 </html>
