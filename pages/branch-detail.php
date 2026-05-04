@@ -37,7 +37,8 @@
                         <?php renderPageHeader('Музейно-краеведческий центр «Дом Г.С. Батенькова»', ['Главная', 'Филиалы'], "branch-hero__breadcrumbs"); ?>
 
                         <div class="branch-hero__address">
-                            <img class="branch-hero__address-icon" src="../images/event-detail/map-pin-light.svg" alt="">
+                            <img class="branch-hero__address-icon" src="../images/event-detail/map-pin-light.svg"
+                                alt="">
                             <div class="branch-hero__address-content">
                                 <span class="branch-hero__address-label">Адрес филиала</span>
                                 <p class="branch-hero__address-text">
@@ -72,6 +73,101 @@
                 </div>
             </div>
         </section>
+
+        <section class="branch-about">
+            <div class="container">
+                <div class="branch-about__layout">
+                    <div class="branch-about__content editor-content">
+                        <p>Городская усадьба Ивана Максимовича Золотарева, купца первой гильдии, стала украшением
+                            провинциальной Калуги в начале XIX века (1805-1808 гг.).</p>
+                        <p>Талантливый зодчий поставил его по красной линии улицы и украсил горельефами на темы
+                            древнегреческого эпоса: "Спор богинь", "Суд Париса", "Жертвоприношение".</p>
+                        <p>Городская усадьба Ивана Максимовича Золотарева, купца первой гильдии, стала украшением
+                            провинциальной Калуги в начале XIX века (1805-1808 гг.).</p>
+                        <p>Талантливый зодчий поставил его по красной линии улицы и украсил горельефами на темы
+                            древнегреческого эпоса: "Спор богинь", "Суд Париса", "Жертвоприношение".</p>
+                        <p>Городская усадьба Ивана Максимовича Золотарева, купца первой гильдии, стала украшением
+                            провинциальной Калуги в начале XIX века (1805-1808 гг.).</p>
+                        <p>Талантливый зодчий поставил его по красной линии улицы и украсил горельефами на темы
+                            древнегреческого эпоса: "Спор богинь", "Суд Париса", "Жертвоприношение".</p>
+
+                    </div>
+                    <aside class="branch-about__aside">
+                        <div class="branch-info-card">
+                            <div class="branch-info-card__section">
+                                <div class="branch-info-card__header">
+                                    <img class="branch-info-card__icon" src="../images/event-detail/clock-light.svg"
+                                        alt="">
+                                    <h2 class="branch-info-card__title">Режим работы</h2>
+                                </div>
+
+                                <div class="branch-info-card__text">
+                                    <p>Вторник – Пятница, Воскресенье: с 9:30 до 18:00.</p>
+                                    <p>Суббота: с 11:00 до 19:00.</p>
+                                    <p>Выходной: Понедельник.</p>
+                                    <p>Санитарный день: Последняя среда месяца.</p>
+                                    <p>Внимание: Касса закрывается за 30 минут до завершения работы музея.</p>
+                                </div>
+                            </div>
+
+                            <div class="branch-info-card__section">
+                                <div class="branch-info-card__header">
+                                    <img class="branch-info-card__icon" src="../images/event-detail/ticket-light.svg"
+                                        alt="">
+                                    <h2 class="branch-info-card__title">Стоимость билетов</h2>
+                                </div>
+
+                                <p class="branch-info-card__text">Актуальный прейскурант на посещение и услуги музея
+                                    доступен для ознакомления и скачивания в формате PDF</p>
+
+
+                                <button class="branch-info-card__download">
+                                    <div class="branch-info-card__download-left">
+                                        <img src="../images/file.svg" alt="">
+                                        <span>Стоимость билетов</span>
+                                    </div>
+
+                                    <div class="branch-info-card__download-icon">
+                                        <img src="../images/branch-detail/download.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="branch-contact">
+                            <h4 class="branch-contact__title title-h4">Контактное лицо</h4>
+
+                            <div class="branch-contact__card">
+                                <div class="branch-contact__info-user">
+                                    <div class="branch-contact__avatar">
+                                        <img src="../images/branch-detail/avatar.png" alt="аватар">
+                                    </div>
+
+
+                                    <div class="branch-contact__main">
+                                        <p class="branch-contact__name">
+                                            Иванов<br>
+                                            Иван Федорович
+                                        </p>
+                                        <p class="branch-contact__position">Директор</p>
+                                    </div>
+                                </div>
+
+                                <div class="branch-contact__links">
+                                    <a class="branch-contact__link" href="tel:+74842721618">+7 (4842)
+                                        72-16-18</a>
+                                    <a class="branch-contact__link"
+                                        href="mailto:ivanov.i@kaluga-museum.ru">ivanov.i@kaluga-museum.ru</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+
         <?php renderOther(); ?>
     </main>
 
