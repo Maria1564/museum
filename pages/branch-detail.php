@@ -24,6 +24,7 @@
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
     require_once dirname(__DIR__) . '/template-parts/checkbox.php';
     require_once dirname(__DIR__) . '/template-parts/other.php';
+    require_once dirname(__DIR__) . '/template-parts/more-link.php';
 
     ?>
 
@@ -207,6 +208,21 @@
             </div>
         </section>
 
+        <section class="feedback-banner">
+            <div class="container">
+                <div class="feedback-banner__wrapper">
+                    <div class="feedback-banner__layout">
+                            <div class="feedback-banner__content">
+                               <h2 class="section-title feedback-banner__title"> Уважаемые посетители! <br> Просим Вас оценить работу нашей организации!</h2>
+                               <p class="feedback-banner__text">Пройдите анонимный опрос, отсканировав QR-код или перейдя по <a href="#" class="link">ссылке</a></p>
+
+                               <?php renderMoreLink('#', 'Оценить работу', "feedback-banner__link"); ?>
+                            </div>
+                        <img class="feedback-banner__qr" src="../images/branch-detail/qr.png" alt="QR-код">
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <?php renderOther(); ?>

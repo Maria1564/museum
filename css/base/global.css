@@ -54,6 +54,11 @@ li {
     list-style: none;
 }
 
+a.link {
+    color: var(--main-brown);
+    text-decoration: underline;
+}
+
 .main {
     width: 100%;
 }
@@ -108,7 +113,7 @@ li {
 }
 
 .editor-content a {
-    color: var(--color-gold);
+    color: var(--main-brown);
     text-decoration: underline;
 }
 

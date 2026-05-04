@@ -102,6 +102,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     height: 66px;
+    transition: all .5s;
 }
 
 .branch-hero__action_primary {
@@ -114,6 +115,15 @@
 .branch-hero__action_price {
     padding: 13px 0;
     max-width: 236px;
+}
+
+.branch-hero__action_price:hover,
+.branch-hero__action:hover {
+    background: #F5CDAA1A;
+}
+
+.branch-hero__action_primary:hover {
+    background-color: var(--color-beige-2);
 }
 
 @media (max-width: 850px) {
@@ -230,6 +240,11 @@
     padding: 18px 20px;
     cursor: pointer;
     margin-top: 30px;
+    transition: all .5s;
+}
+
+.branch-info-card__download:hover {
+    border-color: var(--main-brown);
 }
 
 .branch-info-card__download-left {
@@ -401,5 +416,91 @@
     .branch-gallery__button {
         width: 44px;
         height: 44px;
+    }
+}
+
+
+.feedback-banner {
+    margin-bottom: 80px;
+}
+
+.feedback-banner__wrapper {
+    background-color: var(--color-beige);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-banner__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/branch-detail/like-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+}
+
+.feedback-banner__layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+}
+
+.feedback-banner__qr {
+    max-width: 240px;
+    width: 100%;
+    aspect-ratio: 240 / 240;
+}
+
+.feedback-banner__text {
+    margin: 30px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+    .feedback-banner__layout {
+        flex-direction: column;
+    }
+
+    .feedback-banner__wrapper::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../images/branch-detail/like-bg-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .feedback-banner__qr {
+        align-self: center;
+    }
+
+    .feedback-banner__link {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback-banner {
+        margin-bottom: 40px;
+    }
+
+    .feedback-banner__wrapper {
+        padding: 20px;
+    }
+
+    .feedback-banner__text {
+        font-size: 16px;
+        margin: 20px 0;
     }
 }
