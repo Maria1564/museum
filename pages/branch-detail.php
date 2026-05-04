@@ -22,7 +22,6 @@
     renderHeader('light', 'branches');
 
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
-    require_once dirname(__DIR__) . '/template-parts/checkbox.php';
     require_once dirname(__DIR__) . '/template-parts/other.php';
     require_once dirname(__DIR__) . '/template-parts/more-link.php';
 

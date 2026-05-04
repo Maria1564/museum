@@ -1,0 +1,23 @@
+.expositions__header {
+    margin-bottom: 40px;
+}
+
+.expositions__layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 80px;
+}
+
+.exposition-card__img {
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 560 / 300;
+}
+
+.exposition-card__img > img {
+    width: 100%;
+    height: 100%;
+}
