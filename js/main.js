@@ -1,7 +1,9 @@
 const heroSlider = document.querySelector('.hero-slider__swiper');
 const otherSlider = document.querySelector('.other__swiper');
 const relatedEventsSlider = document.querySelector('.related-events__swiper');
+const branchGallerySlider = document.querySelector('.branch-gallery__swiper');
 let relatedEventsSwiper = null;
+let branchGallerySwiper = null;
 
 if (heroSlider) {
   new Swiper(heroSlider, {
@@ -60,6 +62,29 @@ const initRelatedEventsSlider = () => {
 initRelatedEventsSlider()
 
 window.addEventListener('resize', initRelatedEventsSlider)
+
+const initBranchGallerySlider = () => {
+  if (!branchGallerySlider) {
+    return
+  }
+
+  if (!branchGallerySwiper) {
+    branchGallerySwiper = new Swiper(branchGallerySlider, {
+      loop: true,
+      speed: 700,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.branch-gallery__button_next',
+        prevEl: '.branch-gallery__button_prev',
+      },
+    });
+  }
+}
+
+initBranchGallerySlider()
+
+window.addEventListener('resize', initBranchGallerySlider)
 
 
 const btnOpenMenu = document.querySelector(".header-top__menu")

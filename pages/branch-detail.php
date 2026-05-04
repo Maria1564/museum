@@ -7,7 +7,7 @@
     <title>Филиалы</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style.css?v=3.0.12">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.15">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -167,6 +167,47 @@
             </div>
         </section>
 
+        <section class="branch-gallery">
+            <div class="container">
+                <div class="branch-gallery__header">
+                    <h2 class="section-title branch-gallery__title">Фотогалерея</h2>
+
+                    <div class="branch-gallery__navigation">
+                        <button class="branch-gallery__button branch-gallery__button_prev" type="button"
+                            aria-label="Предыдущее фото">
+                            <img src="../images/arrow-left-m.svg" alt="">
+                        </button>
+
+                        <button class="branch-gallery__button branch-gallery__button_next" type="button"
+                            aria-label="Следующее фото">
+                            <img src="../images/arrow-right-m.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="swiper branch-gallery__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide branch-gallery__slide">
+                            <img class="branch-gallery__image" src="../images/branch-detail/bg.png" alt="Здание филиала">
+                        </div>
+
+                        <div class="swiper-slide branch-gallery__slide">
+                            <img class="branch-gallery__image" src="../images/about-museum/exposition.png" alt="Экспозиция филиала">
+                        </div>
+
+                        <div class="swiper-slide branch-gallery__slide">
+                            <img class="branch-gallery__image" src="../images/about-museum/museum.png" alt="Музейный зал">
+                        </div>
+
+                        <div class="swiper-slide branch-gallery__slide">
+                            <img class="branch-gallery__image" src="../images/about-museum/museum.png" alt="Музейный зал">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <?php renderOther(); ?>
     </main>
@@ -174,7 +215,7 @@
     <?php include dirname(__DIR__) . '/template-parts/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/main.js?v=3.0.2"></script>
+    <script src="../js/main.js?v=3.0.4"></script>
 </body>
 
 </html>
