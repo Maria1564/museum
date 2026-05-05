@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Журнал «Калужское наследие</title>
+    <title>Журнал «Калужское наследие»</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css?v=3.0.16">
@@ -35,7 +35,7 @@
                     <h3 class="journal-year__title">2018 год</h3>
 
                     <div class="journal-year__list">
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">

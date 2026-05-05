@@ -136,7 +136,8 @@ a.link {
     color: var(--color-black);
 }
 
-.editor-content h3 {
+.editor-content h3,
+.title-h3 {
     margin: 60px 0 30px;
     font-weight: 700;
     font-size: 26px;
@@ -193,7 +194,8 @@ a.link {
         font-size: 22px;
     }
 
-    .editor-content h3 {
+    .editor-content h3,
+    .title-h3 {
         font-size: 20px;
     }
 

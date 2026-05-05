@@ -12,7 +12,7 @@
                 <li><a href="../pages/expositions.php" class="mobile-menu__item">Музей Завершье</a></li>
                 <li><a href="../pages/events.php" class="mobile-menu__item">Мероприятия</a></li>
                 <li><a href="../pages/branches.php" class="mobile-menu__item">Филиалы</a></li>
-                <li><a href="#" class="mobile-menu__item">Документы</a></li>
+                <li><a href="../pages/documents.php" class="mobile-menu__item">Документы</a></li>
                 <li><a href="../pages/library.php" class="mobile-menu__item">Библиотека</a></li>
                 <li><a href="#" class="mobile-menu__item">Контакты</a></li>
             </nav>
