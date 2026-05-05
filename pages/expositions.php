@@ -40,9 +40,63 @@
                         </div>
                         <div class="exposition-card__content">
                             <p class="exposition-card__title">Великая Отечественная война. Бои за Боровск</p>
+                            
+                            <div class="exposition-card__details">
+                                <div class="exposition-card__detail">
+                                    <img src="../images/clock.svg" alt="часы">
+                                    <span class="exposition-card__detail-text">Открыто Пн-Пт с 08:00 до 18:00 </span>
+                                </div>
+                                <div class="exposition-card__detail">
+                                    <img src="../images/map-pin.svg" alt="указатель">
+                                    <span class="exposition-card__detail-text">Музейно-краеведческий комплекс «Усадьба Золотарёвых»</span>
+                                </div>
+                            </div>
+
+                            <?php renderMoreLink("#"); ?>
                         </div>
                     </div>
-                    <div class="expositions__card">Hello</div>
+                    <div class="expositions__card exposition-card">
+                        <div class="exposition-card__img">
+                            <img src="../images/expositions/photo-1.png" alt="экспозиция">
+                        </div>
+                        <div class="exposition-card__content">
+                            <p class="exposition-card__title">Великая Отечественная война. Бои за Боровск</p>
+                            
+                            <div class="exposition-card__details">
+                                <div class="exposition-card__detail">
+                                    <img src="../images/clock.svg" alt="часы">
+                                    <span class="exposition-card__detail-text">Открыто Пн-Пт с 08:00 до 18:00 </span>
+                                </div>
+                                <div class="exposition-card__detail">
+                                    <img src="../images/map-pin.svg" alt="указатель">
+                                    <span class="exposition-card__detail-text">Музейно-краеведческий комплекс «Усадьба Золотарёвых»</span>
+                                </div>
+                            </div>
+
+                            <?php renderMoreLink("#"); ?>
+                        </div>
+                    </div>
+                    <div class="expositions__card exposition-card">
+                        <div class="exposition-card__img">
+                            <img src="../images/expositions/photo-1.png" alt="экспозиция">
+                        </div>
+                        <div class="exposition-card__content">
+                            <p class="exposition-card__title">Великая Отечественная война. Бои за Боровск</p>
+                            
+                            <div class="exposition-card__details">
+                                <div class="exposition-card__detail">
+                                    <img src="../images/clock.svg" alt="часы">
+                                    <span class="exposition-card__detail-text">Открыто Пн-Пт с 08:00 до 18:00 </span>
+                                </div>
+                                <div class="exposition-card__detail">
+                                    <img src="../images/map-pin.svg" alt="указатель">
+                                    <span class="exposition-card__detail-text">Музейно-краеведческий комплекс «Усадьба Золотарёвых»</span>
+                                </div>
+                            </div>
+
+                            <?php renderMoreLink("#"); ?>
+                        </div>
+                    </div>
                  </div>
             </div>
         </section>
