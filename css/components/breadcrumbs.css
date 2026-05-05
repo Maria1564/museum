@@ -1,11 +1,22 @@
+.breadcrumbs {
+    max-width: 100%;
+}
+
 .breadcrumbs__list {
     display: flex;
     gap: 20px;
     align-items: center;
+    max-width: 100%;
 }
 
 .breadcrumbs__item {
     position: relative;
+    flex-shrink: 0;
+}
+
+.breadcrumbs__item:last-child {
+    min-width: 0;
+    flex-shrink: 1;
 }
 
 .breadcrumbs__item + .breadcrumbs__item::before {
@@ -28,5 +39,9 @@
 }
 
 .breadcrumbs__current {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: var(--color-gray-7);
 }

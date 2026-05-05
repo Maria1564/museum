@@ -39,6 +39,41 @@
     width: 210px;
     aspect-ratio: 210 / 290;
     object-fit: contain;
+    position: relative;
+}
+
+.journal-year__pdf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-white);
+    border-radius: 6px;
+    border: 1px solid var(--main-brown);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 181px;
+    padding: 13px 0;
+    cursor: pointer;
+}
+
+.journal-year__card-img:hover .journal-year__pdf {
+    display: flex;
+}
+
+.journal-year__pdf > img {
+    width: 24px;
+    height: 24px;
+}
+
+.journal-year__pdf-text {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .journal-year__card-img>img {
@@ -107,5 +142,14 @@
 
     .journal-year:not(:last-child) {
         margin-bottom: 52px;
+    }
+
+    .journal-year__pdf {
+        width: max-content;
+        padding: 10px;
+    }
+
+    .journal-year__pdf-text {
+        display: none;
     }
 }

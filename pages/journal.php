@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Посетителям</title>
+    <title>Журнал «Калужское наследие</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style.css?v=3.0.16">
@@ -38,43 +38,67 @@
                         <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
                         <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                         <div class="jourmal-year__card">
+                        <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                         <div class="jourmal-year__card">
+                        <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
                     </div>
                 </div>
 
-                 <div class="journal-year">
+                <div class="journal-year">
                     <h3 class="journal-year__title">2019 год</h3>
 
                     <div class="journal-year__list">
                         <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
                         <div class="jourmal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
+                                <a href="#" class="journal-year__pdf">
+                                    <img src="../images/file.svg" alt="файл">
+                                    <span class="journal-year__pdf-text">Открыть PDF</span>
+                                </a>
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
