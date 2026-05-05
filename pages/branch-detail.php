@@ -24,6 +24,7 @@
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
     require_once dirname(__DIR__) . '/template-parts/other.php';
     require_once dirname(__DIR__) . '/template-parts/more-link.php';
+    require_once dirname(__DIR__) . '/template-parts/contact-person.php';
 
     ?>
 
@@ -137,30 +138,13 @@
                         <div class="branch-contact">
                             <h4 class="branch-contact__title title-h4">Контактное лицо</h4>
 
-                            <div class="branch-contact__card">
-                                <div class="branch-contact__info-user">
-                                    <div class="branch-contact__avatar">
-                                        <img src="../images/branch-detail/avatar.png" alt="аватар">
-                                    </div>
-
-
-                                    <div class="branch-contact__main">
-                                        <p class="branch-contact__name">
-                                            Иванов<br>
-                                            Иван Федорович
-                                        </p>
-                                        <p class="branch-contact__position">Директор</p>
-                                    </div>
-                                </div>
-
-                                <div class="branch-contact__links">
-                                    <a class="branch-contact__link" href="tel:+74842721618">+7 (4842)
-                                        72-16-18</a>
-                                    <a class="branch-contact__link"
-                                        href="mailto:ivanov.i@kaluga-museum.ru">ivanov.i@kaluga-museum.ru</a>
-                                </div>
-
-                            </div>
+                            <?php renderContactPerson(
+                                '../images/branch-detail/avatar.png',
+                                "Иванов\nИван Федорович",
+                                'Директор',
+                                '+7 (4842) 72-16-18',
+                                'ivanov.i@kaluga-museum.ru'
+                            ); ?>
                         </div>
                     </aside>
                 </div>

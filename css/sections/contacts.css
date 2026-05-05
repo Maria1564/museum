@@ -1,0 +1,84 @@
+.contacts__header {
+    margin-bottom: 60px;
+}
+
+.contacts__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.contacts__info-item {
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+.contacts__info-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contacts__info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts__info-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 170%;
+    color: var(--color-black);
+}
+
+.contacts__info-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+}
+
+@media (max-width: 768px) {
+    .contacts__info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .contacts__info-title {
+        font-size: 14px;
+    }
+
+    .contacts__info-text {
+        font-size: 15px;
+    }
+
+    .contacts__info-content {
+        gap: 10px;
+    }
+}
+
+
+.contacts__persons-layout {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__persons-item {
+    flex: 1 1
+}
+
+@media (max-width: 1024px) {
+    .contacts__persons-layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts__persons-title {
+        margin-top: 40px;
+    }
+}
