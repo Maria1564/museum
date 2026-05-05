@@ -41,7 +41,7 @@
                             <div class="library-book__shelf"></div>
                         </div>
                         <p class="library__card-title">Журнал «Калужское наследие»</p>
-                        <?php renderMoreLink("#", "Подробнее", 'library__card-btn'); ?>
+                        <?php renderMoreLink("../pages/journal.php", "Подробнее", 'library__card-btn'); ?>
 
                     </div>
                     <div class="library__card">
@@ -52,7 +52,7 @@
                             <div class="library-book__shelf"></div>
                         </div>
                         <p class="library__card-title">Журнал «Вопросы истории»</p>
-                        <?php renderMoreLink("#", "Подробнее", 'library__card-btn'); ?>
+                        <?php renderMoreLink("../pages/journal.php", "Подробнее", 'library__card-btn'); ?>
                     </div>
                     <div class="library__card">
                         <div class="library__book library-book">
@@ -62,7 +62,7 @@
                             <div class="library-book__shelf"></div>
                         </div>
                         <p class="library__card-title">Журнал «Связь времен и поколений»</p>
-                        <?php renderMoreLink("#", "Подробнее", 'library__card-btn'); ?>
+                        <?php renderMoreLink("../pages/journal.php", "Подробнее", 'library__card-btn'); ?>
                     </div>
                 </div>
             </div>
