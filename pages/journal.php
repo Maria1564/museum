@@ -32,7 +32,7 @@
                 <?php renderPageHeader('Журнал «Калужское наследие»', ['Главная', 'Библиотека', 'Журнал «Калужское наследие»'], "journal__header"); ?>
 
                 <div class="journal-year">
-                    <h3 class="journal-year__title">2018 год</h3>
+                    <h3 class="journal-year__title">2019 год</h3>
 
                     <div class="journal-year__list">
                         <div class="journal-year__card">
@@ -45,7 +45,7 @@
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">
@@ -55,7 +55,7 @@
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">
@@ -65,7 +65,7 @@
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">
@@ -79,10 +79,10 @@
                 </div>
 
                 <div class="journal-year">
-                    <h3 class="journal-year__title">2019 год</h3>
+                    <h3 class="journal-year__title">2018 год</h3>
 
                     <div class="journal-year__list">
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">
@@ -92,7 +92,7 @@
                             </div>
                             <div class="journal-year__card-shelf"></div>
                         </div>
-                        <div class="jourmal-year__card">
+                        <div class="journal-year__card">
                             <div class="journal-year__card-img">
                                 <img src="../images/library/book-1.png" alt="журнал">
                                 <a href="#" class="journal-year__pdf">

@@ -115,19 +115,12 @@
             <div class="container">
                 <div class="contacts-form__layout">
                     <div class="contacts-form__content">
-                        <h2 class="section-title contacts-form__title">Остались вопросы или хотите оформить заказ
-                            напрямую?</h2>
+                        <h2 class="section-title contacts-form__title">Остались вопросы или хотите сваязаться с нами напрямую?</h2>
                         <div class="contacts-form__phones">
                             <div class="contacts-form__phone">
-                                <p class="contacts-form__phone-text">Телефон для оформления заказа:
+                                <p class="contacts-form__phone-text">телефон для связи:
                                 </p>
-                                <p class="contacts-form__phone-link">+7 920 882-60-60 (Тимур)
-                                </p>
-                            </div>
-                            <div class="contacts-form__phone">
-                                <p class="contacts-form__phone-text">Получить техническую консультацию по телефону:
-                                </p>
-                                <p class="contacts-form__phone-link">+7 920 897-97-54 (Максим)</p>
+                                <p class="contacts-form__phone-link">+7 (4842) 72-16-18</p>
                             </div>
                         </div>
                     </div>
