@@ -14,7 +14,7 @@
                 <li><a href="../pages/branches.php" class="mobile-menu__item">Филиалы</a></li>
                 <li><a href="../pages/documents.php" class="mobile-menu__item">Документы</a></li>
                 <li><a href="../pages/library.php" class="mobile-menu__item">Библиотека</a></li>
-                <li><a href="#" class="mobile-menu__item">Контакты</a></li>
+                <li><a href="../pages/contacts.php"" class="mobile-menu__item">Контакты</a></li>
             </nav>
 
             <div class="mobile-menu__meta">

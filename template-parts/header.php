@@ -50,7 +50,7 @@ function renderHeader(string $theme = 'light', string $activePage = ''): void
                     <li class="nav__item <?= $activePage === 'branches' ? 'nav__item_active' : '' ?>"><a href="../pages/branches.php" class="nav__item-link">Филиалы</a></li>
                     <li class="nav__item <?= $activePage === 'documents' ? 'nav__item_active' : '' ?>"><a href="../pages/documents.php" class="nav__item-link">Документы</a></li>
                     <li class="nav__item <?= $activePage === 'library' ? 'nav__item_active' : '' ?>"><a href="../pages/library.php" class="nav__item-link">Библиотека</a></li>
-                    <li class="nav__item <?= $activePage === 'contacts' ? 'nav__item_active' : '' ?>"><a href="#" class="nav__item-link">Контакты</a></li>
+                    <li class="nav__item <?= $activePage === 'contacts' ? 'nav__item_active' : '' ?>"><a href="../pages/contacts.php" class="nav__item-link">Контакты</a></li>
                 </ul>
             </div>
         </div>

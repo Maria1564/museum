@@ -63,18 +63,18 @@
 
 
 .contacts__persons-layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .contacts__persons-item {
-    flex: 1 1
+    min-width: 0;
 }
 
 @media (max-width: 1024px) {
     .contacts__persons-layout {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 

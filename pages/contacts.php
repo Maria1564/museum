@@ -19,7 +19,7 @@
 
     <?php
     require_once dirname(__DIR__) . '/template-parts/header.php';
-    renderHeader('dark', 'documents');
+    renderHeader('dark', 'contacts');
 
     require_once dirname(__DIR__) . '/template-parts/page-header.php';
     require_once dirname(__DIR__) . '/template-parts/contact-person.php';
