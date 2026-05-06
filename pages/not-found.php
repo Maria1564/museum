@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Посетителям</title>
 
-    <link rel="stylesheet" href="../css/style.css?v=3.0.17">
+    <link rel="stylesheet" href="../css/style.css?v=3.0.18">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
