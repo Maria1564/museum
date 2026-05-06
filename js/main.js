@@ -5,6 +5,13 @@ const branchGallerySlider = document.querySelector('.branch-gallery__swiper');
 let relatedEventsSwiper = null;
 let branchGallerySwiper = null;
 
+const setViewportWidth = () => {
+  document.documentElement.style.setProperty('--viewport-width', `${document.documentElement.clientWidth}px`);
+}
+
+setViewportWidth()
+window.addEventListener('resize', setViewportWidth)
+
 if (heroSlider) {
   new Swiper(heroSlider, {
     loop: true,
